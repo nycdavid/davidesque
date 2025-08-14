@@ -6,8 +6,22 @@
     <description>Recent content on David(esque)</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Aug 2025 15:56:43 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 14 Aug 2025 16:20:30 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to quickly get up to speed with a new Go package</title>
+      <link>http://localhost:1313/posts/how-to-quickly-get-up-to-speed-with-a-new-go-package/</link>
+      <pubDate>Thu, 14 Aug 2025 16:20:30 -0400</pubDate>
+      <guid>http://localhost:1313/posts/how-to-quickly-get-up-to-speed-with-a-new-go-package/</guid>
+      <description>&lt;h1 id=&#34;what-i-do&#34;&gt;What I do&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Have 2 versions of your idea: the big, glorious version and the stripped down, toy version.&lt;/li&gt;
+&lt;li&gt;have a Golang scratch repo&lt;/li&gt;
+&lt;li&gt;Make sure your Go tooling is up-to-date and working (LSP, syntax completion, etc.).&lt;/li&gt;
+&lt;li&gt;Use ChatGPT or other AI tool.&lt;/li&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
