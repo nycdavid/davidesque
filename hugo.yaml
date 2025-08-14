@@ -7,3 +7,6 @@ caches:
 languageCode: en-us
 title: David(esque)
 theme: ["PaperMod"]
+
+params:
+  mainSections: ["posts"]
