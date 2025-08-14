@@ -9,4 +9,13 @@ title: David(esque)
 theme: ["PaperMod"]
 
 params:
+  homeInfoParams:
+    Title: Hi, I'm David. Welcome to my blog!
+  socialIcons:
+    - name: Github
+      url: https://github.com/nycdavid/
+    - name: Linkedin
+      url: https://www.linkedin.com/in/davidsjko/
+    - name: Kofi
+      url: https://ko-fi.com/davidyoon7313
   mainSections: ["posts"]
