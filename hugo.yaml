@@ -1,4 +1,9 @@
 baseURL: https://example.org/
+
+caches:
+  images:
+    dir: :cacheDir/images
+
 languageCode: en-us
 title: David(esque)
 theme: ["PaperMod"]
