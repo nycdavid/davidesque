@@ -111,7 +111,7 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">How to quickly get up to speed with a new Go package
+    <h2 class="entry-hint-parent">How to run TUI apps in GoLand
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -121,10 +121,31 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>What I do Have 2 versions of your idea: the big, glorious version and the stripped down, toy version. have a Golang scratch repo Make sure your Go tooling is up-to-date and working (LSP, syntax completion, etc.). Use ChatGPT or other AI tool. </p>
+    <p>If you’ve tried to run TUI-based apps in GoLand for debugging purposes, you may have seen the following error:
+error: could not open a new TTY: open /dev/tty: device not configured Process finished with the exit code 1 The Registry Go to the Registry Find this under Search Everywhere (Double Shift) -&gt; Actions -&gt; Registry Enable go.run.processes.with.pty Build configuration for main Lastly, go to the build configuration for the main package you’re trying to run and do 2 things: Enable Emulate terminal in output console Add the TERM=xterm-256color environment variable </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-15 10:05:04 -0400 EDT'>August 15, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to How to run TUI apps in GoLand" href="http://localhost:1313/posts/how-to-run-tui-apps-in-goland/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">5 steps to get up to speed with a new Go package
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Intro Body 1. Have ChatGPT generate a tiny, runnable example 2. Add breakpoints Breakpoints are superior to logging statements. Why? Because a log line will simply print whatever you gave it, at which point the program will continue to blaze right through to the end.
+If you didn’t log the right thing or if the log you added was less helpful than you thought, tough luck. You’ll have to restart and/or wait until the main process gets back to that part of the code again.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2025-08-14 16:20:30 -0400 EDT'>August 14, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to How to quickly get up to speed with a new Go package" href="http://localhost:1313/posts/how-to-quickly-get-up-to-speed-with-a-new-go-package/"></a>
+  <a class="entry-link" aria-label="post link to 5 steps to get up to speed with a new Go package" href="http://localhost:1313/posts/how-to-get-up-to-speed-with-a-new-go-package/"></a>
 </article>
 
 <article class="post-entry"> 
