@@ -4,9 +4,13 @@ caches:
   images:
     dir: :cacheDir/images
 
+services:
+  googleAnalytics:
+    ID: G-5LYJVFBTT9
+
 languageCode: en-us
-title: David(esque)
 theme: ["PaperMod"]
+title: David(esque)
 
 params:
   homeInfoParams:

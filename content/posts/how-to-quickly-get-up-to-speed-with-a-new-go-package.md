@@ -10,3 +10,5 @@ title: 'How to quickly get up to speed with a new Go package'
 - have a Golang scratch repo
 - Make sure your Go tooling is up-to-date and working (LSP, syntax completion, etc.).
 - Use ChatGPT or other AI tool.
+
+# 
