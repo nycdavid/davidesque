@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64982&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="Posts - David(esque)">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:64982/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:64982/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:64982/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:64982/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:64982/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:64982/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:64982/posts/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:64982/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,7 +74,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="David(esque) (Alt + H)">David(esque)</a>
+            <a href="http://localhost:64982/" accesskey="h" title="David(esque) (Alt + H)">David(esque)</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,7 +111,7 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">How to run TUI apps in GoLand
+    <h2 class="entry-hint-parent">How to unit test a goroutine that uses time.Ticker
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -121,11 +121,27 @@
     </h2>
   </header>
   <div class="entry-content">
+    <p>I found the following code on the /r/golang subreddit. Someone was asking how to unit test a goroutine that uses the time.Ticker
+package goroutine_ticker import ( &#34;context&#34; &#34;fmt&#34; &#34;time&#34; ) type ( Publisher struct{} ) func New() *Publisher { return &amp;Publisher{} } func (p *Publisher) PeriodicPublish(ctx context.Context, t *time.Ticker) error { defer t.Stop() for { select { case &lt;-t.C: fmt.Println(&#34;data send&#34;) case &lt;-ctx.Done(): t.Stop() return nil } } } The original poster was complaining that this was difficult to test and that their code kept getting stuck in the for loop. Intuitively, we can see why this would be the case as the *time.Ticker parameter will continue to tick in perpetuity until it’s stopped.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-18 10:05:04 -0400 EDT'>August 18, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to How to unit test a goroutine that uses time.Ticker" href="http://localhost:64982/posts/unit-testing-a-goroutine-select-that-uses-time-ticker/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to fix TTY errors in GoLand
+    </h2>
+  </header>
+  <div class="entry-content">
     <p>If you’ve tried to run TUI-based apps in GoLand for debugging purposes, you may have seen the following error:
-error: could not open a new TTY: open /dev/tty: device not configured Process finished with the exit code 1 The Registry Go to the Registry Find this under Search Everywhere (Double Shift) -&gt; Actions -&gt; Registry Enable go.run.processes.with.pty Build configuration for main Lastly, go to the build configuration for the main package you’re trying to run and do 2 things: Enable Emulate terminal in output console Add the TERM=xterm-256color environment variable </p>
+error: could not open a new TTY: open /dev/tty: device not configured Process finished with the exit code 1 In order to get GoLand to be able to run TUI programs correctly, you need to make the following changes:
+The Registry Go to the Registry
+Find this under Search Everywhere (Double Shift) -&gt; Actions -&gt; Registry Enable go.run.processes.with.pty ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-08-15 10:05:04 -0400 EDT'>August 15, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to How to run TUI apps in GoLand" href="http://localhost:1313/posts/how-to-run-tui-apps-in-goland/"></a>
+  <a class="entry-link" aria-label="post link to How to fix TTY errors in GoLand" href="http://localhost:64982/posts/how-to-fix-tty-errors-in-goland/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -145,7 +161,7 @@ If you didn’t log the right thing or if the log you added was less helpful tha
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-08-14 16:20:30 -0400 EDT'>August 14, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 5 steps to get up to speed with a new Go package" href="http://localhost:1313/posts/how-to-get-up-to-speed-with-a-new-go-package/"></a>
+  <a class="entry-link" aria-label="post link to 5 steps to get up to speed with a new Go package" href="http://localhost:64982/posts/how-to-get-up-to-speed-with-a-new-go-package/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -158,12 +174,12 @@ If you didn’t log the right thing or if the log you added was less helpful tha
 package main func main() { } </p>
   </div>
   <footer class="entry-footer"><span title='2025-08-14 15:56:43 -0400 EDT'>August 14, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:1313/posts/my-first-post/"></a>
+  <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:64982/posts/my-first-post/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">David(esque)</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:64982/">David(esque)</a></span> · 
 
     <span>
         Powered by

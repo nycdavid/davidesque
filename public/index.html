@@ -156,8 +156,9 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Let’s say we have the following code:
-package main import ( &#34;context&#34; &#34;time&#34; ) type ( Publisher struct {} ) func (p *Publisher) PeriodicPublish(ctx context.Context, t *time.Ticker) error { defer t.Stop() for { select { case timer := &lt;-t.C: // send data to service case &lt;-ctx.Done(): t.Stop() return nil } } } </p>
+    <p>I found the following code on the /r/golang subreddit. Someone was asking how to unit test a goroutine that uses a time.Ticker.
+package goroutine_ticker import ( &#34;context&#34; &#34;fmt&#34; &#34;time&#34; ) func PeriodicPublish(ctx context.Context, t *time.Ticker) error { defer t.Stop() for { select { case &lt;-t.C: fmt.Println(&#34;data send&#34;) case &lt;-ctx.Done(): t.Stop() return nil } } } The original poster was complaining that this was difficult to test and that their code kept getting stuck in the for loop.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2025-08-18 10:05:04 -0400 EDT'>August 18, 2025</span></footer>
   <a class="entry-link" aria-label="post link to How to unit test a goroutine that uses time.Ticker" href="http://localhost:1313/posts/unit-testing-a-goroutine-select-that-uses-time-ticker/"></a>

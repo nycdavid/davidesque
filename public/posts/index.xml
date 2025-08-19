@@ -2,45 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on David(esque)</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:64982/posts/</link>
     <description>Recent content in Posts on David(esque)</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Aug 2025 10:05:04 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Aug 2025 10:05:04 -0400</lastBuildDate>
+    <atom:link href="http://localhost:64982/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to run TUI apps in GoLand</title>
-      <link>http://localhost:1313/posts/how-to-run-tui-apps-in-goland/</link>
+      <title>How to unit test a goroutine that uses time.Ticker</title>
+      <link>http://localhost:64982/posts/unit-testing-a-goroutine-select-that-uses-time-ticker/</link>
+      <pubDate>Mon, 18 Aug 2025 10:05:04 -0400</pubDate>
+      <guid>http://localhost:64982/posts/unit-testing-a-goroutine-select-that-uses-time-ticker/</guid>
+      <description>&lt;p&gt;I found the following code on the &lt;strong&gt;/r/golang&lt;/strong&gt; subreddit. Someone was asking how to unit test a goroutine that uses the &lt;code&gt;time.Ticker&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;goroutine_ticker&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;context&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;Publisher&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;struct&lt;/span&gt;{}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;New&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Publisher&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Publisher&lt;/span&gt;{}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Publisher&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;PeriodicPublish&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ctx&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;context&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Context&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;time&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Ticker&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;error&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;defer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Stop&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;C&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data send&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ctx&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Done&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Stop&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The original poster was complaining that this was difficult to test and that their code kept getting stuck in the
+&lt;code&gt;for&lt;/code&gt; loop. Intuitively, we can see why this would be the case as the &lt;code&gt;*time.Ticker&lt;/code&gt; parameter will continue to tick
+in perpetuity until it&amp;rsquo;s stopped.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to fix TTY errors in GoLand</title>
+      <link>http://localhost:64982/posts/how-to-fix-tty-errors-in-goland/</link>
       <pubDate>Fri, 15 Aug 2025 10:05:04 -0400</pubDate>
-      <guid>http://localhost:1313/posts/how-to-run-tui-apps-in-goland/</guid>
+      <guid>http://localhost:64982/posts/how-to-fix-tty-errors-in-goland/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve tried to run TUI-based apps in GoLand for debugging purposes, you may have seen the following error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;error: could not open a new TTY: open /dev/tty: device not configured
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Process finished with the exit code &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-registry&#34;&gt;The Registry&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In order to get GoLand to be able to run TUI programs correctly, you need to make the following changes:&lt;/p&gt;
+&lt;h2 id=&#34;the-registry&#34;&gt;The Registry&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the Registry
+&lt;li&gt;
+&lt;p&gt;Go to the Registry&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Find this under &lt;strong&gt;Search Everywhere&lt;/strong&gt; (Double Shift) &lt;code&gt;-&amp;gt;&lt;/code&gt; &lt;strong&gt;Actions&lt;/strong&gt; &lt;code&gt;-&amp;gt;&lt;/code&gt; &lt;strong&gt;Registry&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Find this under &lt;strong&gt;Search Everywhere&lt;/strong&gt; (Double Shift) &lt;code&gt;-&amp;gt;&lt;/code&gt; &lt;strong&gt;Actions&lt;/strong&gt; &lt;code&gt;-&amp;gt;&lt;/code&gt; &lt;strong&gt;Registry&lt;/strong&gt;
+&lt;img alt=&#34;GoLand screenshot&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:64982/posts/how-to-fix-tty-errors-in-goland/goland-registry.png&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Enable &lt;code&gt;go.run.processes.with.pty&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;build-configuration-for-main&#34;&gt;Build configuration for &lt;code&gt;main&lt;/code&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Lastly, go to the build configuration for the &lt;code&gt;main&lt;/code&gt; package you&amp;rsquo;re trying to run and do 2 things:
-&lt;ul&gt;
-&lt;li&gt;Enable &lt;strong&gt;Emulate terminal in output console&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Add the &lt;code&gt;TERM=xterm-256color&lt;/code&gt; environment variable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;li&gt;
+&lt;p&gt;Enable &lt;code&gt;go.run.processes.with.pty&lt;/code&gt;
+&lt;img alt=&#34;GoLand screenshot&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:64982/posts/how-to-fix-tty-errors-in-goland/goland-registry-setting.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 steps to get up to speed with a new Go package</title>
-      <link>http://localhost:1313/posts/how-to-get-up-to-speed-with-a-new-go-package/</link>
+      <link>http://localhost:64982/posts/how-to-get-up-to-speed-with-a-new-go-package/</link>
       <pubDate>Thu, 14 Aug 2025 16:20:30 -0400</pubDate>
-      <guid>http://localhost:1313/posts/how-to-get-up-to-speed-with-a-new-go-package/</guid>
+      <guid>http://localhost:64982/posts/how-to-get-up-to-speed-with-a-new-go-package/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
 &lt;h1 id=&#34;body&#34;&gt;Body&lt;/h1&gt;
 &lt;h2 id=&#34;1-have-chatgpt-generate-a-tiny-runnable-example&#34;&gt;1. Have ChatGPT generate a tiny, runnable example&lt;/h2&gt;
@@ -52,9 +86,9 @@ restart and/or wait until the main process gets back to that part of the code ag
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:64982/posts/my-first-post/</link>
       <pubDate>Thu, 14 Aug 2025 15:56:43 -0400</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:64982/posts/my-first-post/</guid>
       <description>&lt;h1 id=&#34;hello&#34;&gt;Hello!&lt;/h1&gt;
 &lt;p&gt;This is a snippet of code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-golang&#34; data-lang=&#34;golang&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;
