@@ -1,6 +1,6 @@
 ---
 date: '2025-08-18T10:05:04-04:00'
-draft: true
+draft: false
 title: How to unit test a function that uses time.Ticker
 ---
 
