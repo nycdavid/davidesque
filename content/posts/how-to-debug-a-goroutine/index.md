@@ -4,48 +4,51 @@ draft: true
 title: 'How to Debug a Goroutine'
 ---
 
-Debugging concurrent code can be pretty tricky.
+## Quick note about editors/IDEs
 
-## Note about editors/IDEs
+With Go, my philosophy on editors vs. IDEs vs. whatever else is this: if your current setup won't allow you to: 
 
-With Go, my philosophy on editors vs. IDEs vs. whatever else is this: if your current setup won't allow you to easily add
-breakpoints, granularly step through code line-by-line and dive in to and out of function calls, change your setup to
-one that does. Immediately.
+- easily add breakpoints
+- granularly step through code line-by-line and 
+- dive in to and out of function calls
+
+you're making your life unnecessarily difficult, at least as far as writing Go is concerned. Debugging sequential
+code without a wait to pause execution is hard. Trying to debug concurrent code without them: you're going to have
+a bad time.
 
 The boost in productivity you'll experience immediately by using breakpoints rather than print statements and just 
-trying to read the code and make sense of it in your head will be nothing short of miraculous.
+trying to read the code and make sense of it in your head will be __drastic__.
 
 Luckily, most editors and IDEs (vim, VS Code, etc.) coupled with the right plugins and tooling should get you there.
 
+That being said, my example below will be using the Jetbrains GoLand IDE but the ideas should translate to other 
+editors.
+
 ## Using breakpoints
+
+A breakpoint will pause execution of all code that's running at the moment in which any process gets to the defined
+breakpoint. When I'm debugging code that uses goroutines, I'll place breakpoints in _at least_ the following
+2 places:
+
+1. The latest point _before_ any goroutines are created. This is typically the  line right before an invocation of 
+  `go func(...) {...}()`
+2. The first line of the goroutine'ed function.
+
+Breakpoints in these 2 places will allow you to:
+
+- Examine the state of the world _before_ any concurrent code has run.
+- Examine the state of the world _as_ concurrent code is running.[^1]
+
+[^1]: It's important to note that a breakpoint is _still_ not a guarantee of sequential code. Assuming that will very
+likely lead to incorrect deductions about your code's behavior.
 
 ## Using `GOMAXPROCS`
 
 `GOMAXPROCS` is an environment variable that the runtime looks at to determine how many goroutines it will allow to 
-make simultaneous progress at any one time.
+make simultaneous progress at any one time i.e. if you set `GOMAXPROCS=1`, only one goroutine will be able to make 
+progress at a time.
 
-## You can't enforce an order (at least not easily)
-
-I limited my `GOMAXPROCS` to 1 and clicked through every execution of each goroutine but wound up getting a 
-non-deterministic order every time.
-
-This is because as soon as a function is executed as a goroutine, it's a free-for-all in terms of which goroutine
-gets scheduled first. Even if it appears that your concurrent code is executing in the order that it happens to be 
-written, this is purely a coincidence and cannot be relied on to happen every time.
-
-Not only that, but the concept of "preemption" also takes effect with goroutines:
-
-> __Preemption__ means the scheduler can pause a running goroutine and switch execution to another, even if the goroutine hasn’t voluntarily yielded (e.g. by blocking on I/O or a channel).
-
-What this means for debugging is that, although we can have goroutines execute 1 at a time, there's no guarantee that
-they'll execute in the order that they were created. It sounds obvious but if the code can only be debugged and 
-understood if executed in a specific order, strongly consider just writing it sequentially. The problem might just 
-be a bad fit for concurrency.
-
----
-
-### Async synchronous code
-That being said, I like to experiment. So I asked myself what would code that's written concurrently but must 
-execute sequentially look like?
-
-__WARNING: The following code is _terrible_. No one should ever write anything that remotely resembles it.__
+It's important to note the nuance in the statement above: even if `GOMAXPROCS=1`, it _does not_ mean that one goroutine
+will be scheduled and run to completion, uninterrupted. Due to Go's preemption[^2] the 1 goroutine that gets scheduled 
+can be swapped out for another goroutine at any time. With `GOMAXPROCS=1`, the only guarantee is that only that number
+of goroutines will be executing concurrently at any moment.
