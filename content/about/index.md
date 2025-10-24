@@ -1,6 +1,6 @@
 ---
 date: '2025-10-24T09:08:36-04:00'
-draft: true
+draft: false
 title: 'What is this blog about?'
 ---
 
