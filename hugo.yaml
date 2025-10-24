@@ -25,3 +25,8 @@ params:
     - name: Kofi
       url: https://ko-fi.com/davidyoon7313
   mainSections: ["posts"]
+
+menus:
+  main:
+    - name: About
+      URL: /about
