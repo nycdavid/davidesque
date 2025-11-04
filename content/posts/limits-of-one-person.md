@@ -54,14 +54,34 @@ loud it had the potential to be. I was excited that he could see something in th
 that up with a supremely disappointing sentence: "you can't build this. It's too big."
 
 I was disappointed, but not the shallow disappointment that one feels when he quickly realizes that something's impossible
-but the deeper disappointment that's experienced when you have hope that eventually gets extinguished. At the root of it,
-I think I was feeling a special kind of despair that every young child does at some point: I wanted to do something but
-didn't have the agency to do it.
+but the deeper disappointment that's experienced when you have a small kindling of hope that eventually gets extinguished. 
+At the root of it, I think I was feeling a special kind of despair that every young child does at some point: I wanted 
+to do something but didn't have the agency to do it.
 
 He probably has no idea that that had such a profound effect on me all these years later, but I can't blame him. His 
 parenting style wasn't really the "meet the child where he is" type (neither was my mother's, for that matter) and so
 probably didn't really know how to nurture the type of curiosity that I was exhibiting when I brought this project to
 him.
 
-But of course, only a few short years later, lots of DIY amp kits started to come out on the market. It was then I realized, 
-"Wait, so I wasn't crazy. Building my own tube amp IS possible."
+But of course, only a few short years later, lots of DIY amp kits started to come out on the market. It was then 
+I realized, "Wait... so I wasn't crazy. Building my own tube amp IS possible."
+
+# Fast-forward to today
+
+I'm not sure if any of those limitations in the past were real. Maybe it simply was the case that, without a lot of
+money or connections, a single person was highly limited in terms of what they could do alone.
+
+But it's not true today. Information on the internet, LLMs and automation have given single individuals tremendous
+amounts of leverage compared to my father's era. Sure, the tools can be awkward to both use and connect together, but
+they represent oceans of opportunity for those persistent enough to try and keep trying.
+
+# So what do I want to do?
+
+Put simply, I want to address my inner child. The same child that felt helpless and lacked the agency to start 
+something on his own because he felt like he needed a team or that he needed someone to say "Yes" to him. I want to 
+give him the agency to be both the person that says "Yes" and the recipient of that "Yes".
+
+Eventually, I also want to place that same agency into the hands of my 2 boys. I want to break the cycle of 
+intergenerational trauma and helplessness and hand something down to them that I can be proud of and that they can use. 
+I'll do so with money, access and a conscious effort to present them with the possibility that they can do anything
+they want.
