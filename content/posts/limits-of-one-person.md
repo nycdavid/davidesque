@@ -34,5 +34,34 @@ Things I often heard from adults in my vicinity as I was growing up were:
 2. You need a team.
 3. That's really ambitious. You need to be more practical.
 
-It's become increasingly more interesting to me, as I have children of my own, how much of a blank slate they are and,
-in turn, how many of our limiting beliefs and trauma we tend to pass on to them.
+As I have kids of my own, I've become even more conscious to how much of a blank slate they are and, more importantly,
+how many of them inherit limiting beliefs and trauma from their caretakers and adults around them.
+
+# Building my own amp
+
+For a brief time in college, when I was learning guitar and obsessed with finding the amp that would provide me
+with "that amazing tone", I convinced myself that building a tube amp from scratch was the only way to get it.
+
+I wanted Zakk Wylde's tone and so the only way to get it, in my mind, was to find old schematics of his amp head and
+try to build it myself. Zakk Wylde's work with Ozzy was almost 30 years old at that point, and his old Lee Jackson amp
+heads had long been discontinued. It's actually doubtful that they were actually ever on sale to the public and much
+more likely that they were a one-off custom build for Zakk himself.
+
+In any case, I found these schematics online and, knowing my father was somewhat electrically inclined, showed them to
+him while expressing my desire to build this or something like it. He looked at it and actually did recognize some
+of the symbols on the wiring schematic like the diodes. He expressed mild surprise at how powerful the amp was and how
+loud it had the potential to be. I was excited that he could see something in the diagram that I couldn't, but he followed
+that up with a supremely disappointing sentence: "you can't build this. It's too big."
+
+I was disappointed, but not the shallow disappointment that one feels when he quickly realizes that something's impossible
+but the deeper disappointment that's experienced when you have hope that eventually gets extinguished. At the root of it,
+I think I was feeling a special kind of despair that every young child does at some point: I wanted to do something but
+didn't have the agency to do it.
+
+He probably has no idea that that had such a profound effect on me all these years later, but I can't blame him. His 
+parenting style wasn't really the "meet the child where he is" type (neither was my mother's, for that matter) and so
+probably didn't really know how to nurture the type of curiosity that I was exhibiting when I brought this project to
+him.
+
+But of course, only a few short years later, lots of DIY amp kits started to come out on the market. It was then I realized, 
+"Wait, so I wasn't crazy. Building my own tube amp IS possible."
