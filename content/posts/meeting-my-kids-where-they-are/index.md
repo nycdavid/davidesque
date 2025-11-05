@@ -4,8 +4,14 @@ draft: true
 title: 'Meeting my kids where they are'
 ---
 
+> The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore, __all progress depends on the unreasonable man__.
+> 
+> George Bernard Shaw
+
 A recent realization that I've had as a father was this idea that I want to preserve the youthful naïvete and 
 aspirations that my children have for as long as I can.
+
+
 
 # Gear acquisition syndrome
 
@@ -62,10 +68,17 @@ places. How frustrating it must be for children when they can't just do what the
 
 So here's an idea: what if I play up that role more?
 
-## My role as an unblocker
+## Our (adults) role as unblockers
 
 I'm older now and well-established in my career. I have both the money and skill to entertain the ideas and wants that
-my kids might communicate to me.
+my kids might communicate to me. 
+
+My wife and I are their only means of getting what they want right now, so what if we enthusiastically took to that role
+and actively unblocked their paths so they can do what they need to do?
+
+I want them to go out into the world as adults with enough "headroom" on their ambitions so they'll strive for great things.
+And maybe that starts in showing them the wonders of possibility when they're children rather than artificially clamping 
+down on it, just to have convenience for myself.
 
 ## A dash of realism
 
