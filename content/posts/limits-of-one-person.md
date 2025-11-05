@@ -4,67 +4,54 @@ draft: true
 title: 'What are the limits of what one person can do?'
 ---
 
-# Trying to start a band
+Throughout my youth and early adulthood, I had this mistaken idea that if I wanted to do something big, I
+couldn't do it alone. I thought I needed a team.
 
-When I started playing guitar in middle school, I did what most who play instruments do: I tried to find other people 
-who liked the same music I did (Metallica, Megadeth and other heavy metal) and start a band with them to achieve my
-dreams of rockstar-dom.
+In hindsight, I'm almost 100% sure this was simply a lack of faith in both my skills and ability to learn new things. I
+wanted to do something but didn't know how, so I thought I needed someone else to do it with me in order to get started.
 
-I quickly ran into some non-trivial roadblocks:
-
-1. Guitarists/bassists were relatively easy to find, but drummers were near impossible as even a standard kit could be both 
-   prohibitively expensive and difficult to store. Parents of teenagers typically try to _avoid_ this.
-2. Even if drummers were plentiful, all band members would have to find a way to the drummer's house as attempting to 
-   move a kit to another location for practice would be completely impractical.
-   - No one had a license at that age and, of the few that do, those with spare vehicles were fewer still.
-3. Everyone had varying levels of both dedication and free time. There were many instances where we would try to make
-   plans to meet that would just never materialize.
-
-All of this led to a lot of time spent _trying_ to play music with other people but not very much time _actually_ 
-playing music.
-
-Eventually, I just gave up. Playing music as an ensemble became something unachievable and eventually just fell by the
-way-side and I eventually categorized writing music that was musically complete as something that I would never do.
+Which, I now realize, was total bullshit.
 
 # It's too much for you to do alone
 
-Things I often heard from adults in my vicinity as I was growing up were:
+The idea that I need a group to start/do the things I want to do was pervasive when I was growing up. It was like a mind
+disease that infected my parents and others around me.
+
+Things I often heard from adults in my vicinity as I was growing up:
 
 1. You can't do this yourself.
 2. You need a team.
 3. That's really ambitious. You need to be more practical.
 
-As I have kids of my own, I've become even more conscious to how much of a blank slate they are and, more importantly,
-how many of them inherit limiting beliefs and trauma from their caretakers and adults around them.
+As I have kids of my own, I've become even more conscious to how much of a blank slate children are and, more importantly,
+how easy it is for them to inherit limiting beliefs and trauma from their environment.
 
-# Building my own amp
+## Trying to start a band
 
-For a brief time in college, when I was learning guitar and obsessed with finding the amp that would provide me
-with "that amazing tone", I convinced myself that building a tube amp from scratch was the only way to get it.
+When I started playing guitar in middle school, I did what most people who play instruments do: I tried to find other people 
+who liked the same music I did (Metallica, Megadeth and other heavy metal) and start a band with them to achieve my
+dreams of rockstar-dom.
 
-I wanted Zakk Wylde's tone and so the only way to get it, in my mind, was to find old schematics of his amp head and
-try to build it myself. Zakk Wylde's work with Ozzy was almost 30 years old at that point, and his old Lee Jackson amp
-heads had long been discontinued. It's actually doubtful that they were actually ever on sale to the public and much
-more likely that they were a one-off custom build for Zakk himself.
+I quickly ran into some roadblocks:
 
-In any case, I found these schematics online and, knowing my father was somewhat electrically inclined, showed them to
-him while expressing my desire to build this or something like it. He looked at it and actually did recognize some
-of the symbols on the wiring schematic like the diodes. He expressed mild surprise at how powerful the amp was and how
-loud it had the potential to be. I was excited that he could see something in the diagram that I couldn't, but he followed
-that up with a supremely disappointing sentence: "you can't build this. It's too big."
+1. Guitarists/bassists were relatively easy to find, but drummers were near impossible as even a standard kit was both 
+   prohibitively expensive and difficult to store. Also, really, really loud. It was like the trifecta of things that
+   parents hate. Being a older and a parent now, I __totally get it__, but it was a real impediment for us back then.
+2. Even if drummers had been plentiful, all practice and jam sessions would have to happen __at the drummer's house__. 
+   No one's trying to disassemble a kit and transport it elsewhere so their band can practice for 2 hours, just to have 
+   to move it back. Totally impractical.
+    - Furthermore, no one really has a license at that age and, of the few that did, those with spare vehicles were fewer still.
+3. Everyone had varying levels of both dedication and free time. There were many instances where we would try to make
+   plans to meet that would just never materialize because of reasons. 
+   - A typical band would be _at least_ a three-piece, but usually more. Trying to wrangle 5 schedules and find a sliver
+     of free time in that impossible intersection would be enough to make anyone not bother.
 
-I was disappointed, but not the shallow disappointment that one feels when he quickly realizes that something's impossible
-but the deeper disappointment that's experienced when you have a small kindling of hope that eventually gets extinguished. 
-At the root of it, I think I was feeling a special kind of despair that every young child does at some point: I wanted 
-to do something but didn't have the agency to do it.
+I found myself spending a lot of time spent _trying_ to play music with other people but not very much time _actually_ 
+playing music.
 
-He probably has no idea that that had such a profound effect on me all these years later, but I can't blame him. His 
-parenting style wasn't really the "meet the child where he is" type (neither was my mother's, for that matter) and so
-probably didn't really know how to nurture the type of curiosity that I was exhibiting when I brought this project to
-him.
-
-But of course, only a few short years later, lots of DIY amp kits started to come out on the market. It was then 
-I realized, "Wait... so I wasn't crazy. Building my own tube amp IS possible."
+Eventually, I just gave up. Writing music with other people became something unachievable and eventually just fell by the
+way-side. I eventually filed "writing & playing music" in the folder of things that I would just never do. It never
+occurred to me to just start by myself.
 
 # Fast-forward to today
 
@@ -75,7 +62,7 @@ But it's not true today. Information on the internet, LLMs and automation have g
 amounts of leverage compared to my father's era. Sure, the tools can be awkward to both use and connect together, but
 they represent oceans of opportunity for those persistent enough to try and keep trying.
 
-# So what do I want to do?
+# So what will I do with this information?
 
 Put simply, I want to address my inner child. The same child that felt helpless and lacked the agency to start 
 something on his own because he felt like he needed a team or that he needed someone to say "Yes" to him. I want to 
