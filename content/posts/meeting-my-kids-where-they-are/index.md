@@ -115,7 +115,7 @@ down on their ambitions, just to have a quiet afternoon for myself.
 
 ## A dash of realism
 
-Here's the thing: his doubt was __justified__ and __correct__. I mean, the idea that I would be able to take some
+Here's the thing: my father's doubt was __justified__ and __correct__. I mean, the idea that I would be able to take some
 random, hand-drawn wiring diagram that I found on the internet and build an exact, functioning replica of a custom amp
 head is laughable to me now. I understand my father's dismissal.
 
