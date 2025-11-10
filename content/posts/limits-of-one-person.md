@@ -10,7 +10,7 @@ couldn't do it alone. I thought I needed a team.
 In hindsight, I'm almost 100% sure this was simply a lack of faith in both my skills and ability to learn new things. I
 wanted to do something but didn't know how, so I thought I needed someone else to do it with me in order to get started.
 
-Which, I now realize, was total bullshit.
+Which, I now realize, was _utter_ bullshit.
 
 # It's too much for you to do alone
 
@@ -61,14 +61,3 @@ money or connections, a single person was highly limited in terms of what they c
 But it's not true today. Information on the internet, LLMs and automation have given single individuals tremendous
 amounts of leverage compared to my father's era. Sure, the tools can be awkward to both use and connect together, but
 they represent oceans of opportunity for those persistent enough to try and keep trying.
-
-# So what will I do with this information?
-
-Put simply, I want to address my inner child. The same child that felt helpless and lacked the agency to start 
-something on his own because he felt like he needed a team or that he needed someone to say "Yes" to him. I want to 
-give him the agency to be both the person that says "Yes" and the recipient of that "Yes".
-
-Eventually, I also want to place that same agency into the hands of my 2 boys. I want to break the cycle of 
-intergenerational trauma and helplessness and hand something down to them that I can be proud of and that they can use. 
-I'll do so with money, access and a conscious effort to present them with the possibility that they can do anything
-they want.
