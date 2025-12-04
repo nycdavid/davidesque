@@ -1,6 +1,6 @@
 ---
 date: '2025-12-04T09:16:27-05:00'
-draft: true
+draft: false
 title: 'The Kubernetes Controller Series'
 ShowToc: true
 TocOpen: true
