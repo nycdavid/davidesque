@@ -44,5 +44,7 @@ func (r *CarReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.R
 }
 ```
 
-In the next post of the series, we'll get started on generating our own starter controller project so you can see it
-in action.
+---
+
+In the next post of the series, we'll get started on generating our own basic controller project so you can start to see
+how it all fits together.
