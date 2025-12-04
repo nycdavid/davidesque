@@ -8,10 +8,13 @@ series: "kubernetes-controller"
 The best way to think about a controller is like a thermostat in a house. A thermostat's job is to maintain a threshold 
 temperature.
 
+![Thermostat](thermostat.png)
+
 If the temperature of the house drops below that threshold, the thermostat detects that and sends a signal to the 
 furnace to kick on. After the furnace runs for a bit and the house has warmed up to above the threshold, the thermostat
-sees this and sends another signal to the furnace to turn off. It also works in the opposite direction as well, turning 
-on the cooling when the home temperature goes too high.
+sees this and sends another signal to the furnace to turn off.
+
+It also works in the opposite direction as well, turning on the cooling when the home temperature goes too high.
 
 A controller does this with resources. It can detect changes to both native K8s resources and custom resources and 
 choose to do something in response to those changes.
