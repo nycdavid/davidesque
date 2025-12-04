@@ -6,6 +6,9 @@ tocSections:
   - title: 'What is a Kubernetes controller?'
     live: true
     path: '/posts/what-is-a-k8s-controller'
+  - title: 'Generating a basic controller'
+    live: false
+    path: '/posts/generating-a-basic-controller'
 ---
 
 This series will be an ongoing collection of my notes exploring the ins and outs of Kubernetes controllers.
