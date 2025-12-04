@@ -2,5 +2,5 @@
 
 1. Run the command
 ```bash
-hugo new content content/posts/[post-name].md
+hugo new content content/posts/[post-name]/index.md
 ```
