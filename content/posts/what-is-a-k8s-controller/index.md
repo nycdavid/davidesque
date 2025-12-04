@@ -25,7 +25,7 @@ A controller is simply a Go binary. The binary is built into an image and that i
 The Go program uses the K8s watch API to observe the resource types of your choosing and then runs something called 
 "reconciliation" when it detects changes to the resource(s) that it's watching.
 
-Reconciliation, as you'll soon see, is just a Go function that receives a `Request` object and returns a `Response` 
+Reconciliation, as you'll soon see, is just a Go function that receives a `Request` object and returns a `Result` 
 object. The `Request` object contains the namespaced name of the resource that was changed and the idea is to, in the
 body of the reconciliation function, make all the API calls necessary to reconcile the K8s state into what it should be
 before returning.
