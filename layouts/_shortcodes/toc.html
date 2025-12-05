@@ -1,0 +1,17 @@
+{{ $sections := .Page.Params.tocSections }}
+<div class="toc">
+  <details open>
+    <summary accesskey="c" title="(Alt + C)">
+      <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
+    </summary>
+    <div class="inner">
+      <ul>
+        {{ range $sections }}
+          <li>
+            {{ .title }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+</div>
