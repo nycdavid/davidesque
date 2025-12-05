@@ -16,7 +16,7 @@ If we overspend, we tend to just borrow from the next month, which, in my opinio
 YNAB is all about. 
 
 We also have a couple of "catch-all" categories with names like "Misc." where we just dump all transactions that don't 
-really neatly fit in another category. This kind of "lazy accounting", makes it really difficult to sort out which 
+really fit in another category. This kind of "lazy accounting", makes it really difficult to sort out which 
 purchases should be prioritized, deferred or simply not made at all. It's barely better than not tracking at all 
 (but __is__ still better).
 
