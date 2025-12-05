@@ -6,8 +6,9 @@ ShowToc: true
 TocOpen: true
 ---
 
-This series will be an ongoing collection of my notes exploring the ins and outs of Kubernetes controllers which I'll 
-do my best to polish for reader consumption. I can't promise that they'll be exhaustive, but I can promise that they'll 
-be _practical_.
+This series will be an ongoing collection of my notes exploring the ins and outs of Kubernetes controllers.
+
+I'll do my best to polish these into bite-sized posts ideal for reader consumption. I can't promise that they'll be 
+exhaustive, but I can promise that they'll be _practical_.
 
 #### [1. What is a Kubernetes controller?](/posts/what-is-a-k8s-controller)
