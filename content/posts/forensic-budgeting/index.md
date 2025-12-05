@@ -17,9 +17,10 @@ YNAB is all about.
 
 We also have a couple of "catch-all" categories with names like "Misc." where we just dump all transactions that don't 
 really neatly fit in another category. This kind of "lazy accounting", makes it really difficult to sort out which 
-purchases should be prioritized, deferred or simply not made at all. 
+purchases should be prioritized, deferred or simply not made at all. It's barely better than not tracking at all 
+(but __is__ still better).
 
-It's barely better than not tracking at all (but __is__ still better).
+Ironically, it's in these catch-all categories that we overspend __the most__.
 
 Thus, I wanted to dedicate this series to using code and data to:
 
