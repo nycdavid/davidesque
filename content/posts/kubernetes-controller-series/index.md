@@ -2,8 +2,6 @@
 date: '2025-12-04T09:16:27-05:00'
 draft: false
 title: 'The Kubernetes Controller Series'
-ShowToc: true
-TocOpen: true
 tocSections:
   - title: 'What is a Kubernetes controller?'
     path: '/posts/what-is-a-k8s-controller'
@@ -16,5 +14,3 @@ exhaustive, but I can promise that they'll be _practical_ and, hopefully, you'll
 as I have.
 
 {{< toc >}}
-
-#### [1. What is a Kubernetes controller?](/posts/what-is-a-k8s-controller)

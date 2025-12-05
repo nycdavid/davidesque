@@ -5,13 +5,13 @@
       <span class="details">{{- i18n "toc" | default "Table of Contents" }}</span>
     </summary>
     <div class="inner">
-      <ul>
+      <ol>
         {{ range $sections }}
           <li>
-            {{ .title }}
+            <a href="{{ .path }}">{{ .title }}</a>
           </li>
         {{ end }}
-      </ul>
+      </ol>
     </div>
   </details>
 </div>
