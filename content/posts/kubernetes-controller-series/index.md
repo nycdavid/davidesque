@@ -4,6 +4,7 @@ draft: false
 title: 'The Kubernetes Controller Series'
 tocSections:
   - title: 'What is a Kubernetes controller?'
+    live: true
     path: '/posts/what-is-a-k8s-controller'
 ---
 
