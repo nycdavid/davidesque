@@ -1,7 +1,7 @@
 ---
 date: '2025-12-05T10:04:56-05:00'
 draft: true
-title: 'Forensic Budgeting'
+title: 'Series: Forensic Budgeting'
 tocSections:
   - title: 'The smoking gun: Misc. spending'
     live: false
