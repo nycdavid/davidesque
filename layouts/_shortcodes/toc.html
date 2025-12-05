@@ -8,7 +8,11 @@
       <ol>
         {{ range $sections }}
           <li>
-            <a href="{{ .path }}">{{ .title }}</a>
+            {{ if .live }}
+              <a href="{{ .path }}">{{ .title }}</a>
+            {{ else }}
+              {{ .title }} (coming soon)
+            {{ end }}
           </li>
         {{ end }}
       </ol>
