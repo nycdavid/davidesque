@@ -4,8 +4,8 @@ draft: false
 title: 'Series: Forensic Budgeting'
 tocSections:
   - title: "Baseline: where we're at now"
-    live: false
-    path: '#'
+    live: true
+    path: '/posts/baseline-where-were-at-now'
   - title: 'The smoking gun: Misc. spending'
     live: false
     path: '#'
