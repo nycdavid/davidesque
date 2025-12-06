@@ -3,6 +3,9 @@ date: '2025-12-05T10:04:56-05:00'
 draft: false
 title: 'Series: Forensic Budgeting'
 tocSections:
+  - title: "Baseline: where we're at now"
+    live: false
+    path: '#'
   - title: 'The smoking gun: Misc. spending'
     live: false
     path: '#'
