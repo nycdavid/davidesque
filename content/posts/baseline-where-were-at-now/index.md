@@ -1,6 +1,6 @@
 ---
 date: '2025-12-06T06:52:08-05:00'
-draft: true
+draft: false
 title: "Baseline: Where We're at Now"
 series: 'forensic-budgeting'
 ---
