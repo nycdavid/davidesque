@@ -21,7 +21,7 @@ Looking at the top 3 categories, sorted by spend, we've got:
    - Our housing cost is always our biggest expense, which is probably true for most.
    - It's also our most _inflexible_ expense, i.e. there's very little we can do to lower our monthly payment. We were 
      very lucky and were able to snag a really low rate (2.875%) during the record low interest rate environment in the 
-     summer of 2021, so a re-finance now would be _terrible_ idea.
+     summer of 2021, so a re-finance now would be a _terrible_ idea.
 
 2. __Investment__: this is the amount of take-home pay that we're able to put into both tax-advantaged and 
    nontax-advantaged investment accounts.
