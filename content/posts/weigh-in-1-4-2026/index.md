@@ -2,6 +2,7 @@
 date: '2026-01-05T05:03:07-05:00'
 draft: false
 title: 'Weigh-in: 1/4/2026'
+series: "weight-loss"
 ---
 
 ![20260104 Weigh in](weigh-in-20260104.png)
