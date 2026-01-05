@@ -23,8 +23,8 @@ Here's my starting point 7 months ago:  225.8 pounds.
 There are a few tips and tricks that I want to outline here so that they're formalized and can be referred back to:
 
 1. (?) Weigh-in is once a week, on Fridays.
-   - I'm not _100%_ sure about this one because I DO kind of see the efficacy of doing weigh-ins more often than that 
-     because, if the number on the scale isn't decreasing at the rate that I want, it might induce me to re-double my 
+   - I'm not _100%_ sure about this one because I DO kind of see the efficacy of doing weigh-ins more often than that.
+   - If the number on the scale isn't decreasing at the rate that I want, it might induce me to re-double my 
      efforts where I otherwise wouldn't have.
    - Up until now I've kind of compulsively weighed myself daily just to see the scale go down, but I'm skeptical about
      the psychological effect that daily measurement has on me.
