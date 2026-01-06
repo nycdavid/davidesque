@@ -16,7 +16,7 @@ My overall goal is probably to get ~150 lbs, but I'm sure that can and will chan
 
 Here's my starting point 7 months ago:  225.8 pounds.
 
-![MFP](starting-point.png)
+{{< line_chart dataPartial="weight" >}}
 
 # A few notes/guidelines
 
@@ -37,5 +37,5 @@ There are a few tips and tricks that I want to outline here so that they're form
    - With this new schedule, I have time to work on things in the morning and the private time that I crave and enjoy,
      but I also get very tired by the 8-9 PM rolls around. This winds up, more often than not, short-circuiting the
      snack loop that I sometimes get into at night.
-   - I'm thinking this is one my __keystone habits__ that I simply just have to keep. As long as I do it, every other
+   - I'm thinking this is one of my __keystone habits__ that I simply just have to keep. As long as I do it, every other
      vital component ends up falling into place.
