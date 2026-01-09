@@ -2,12 +2,7 @@
 date: '2026-01-05T04:10:53-05:00'
 draft: false
 title: 'Series: My Journey in Weight Loss'
-tocSections:
-  - title: 'Weigh-in: 1/4/2026'
-    live: true
-    path: '/posts/weigh-in-1-4-2026'
 ---
-{{< toc >}}
 
 I've decided to start documenting my journey in weight loss as a way to keep myself accountable and to also keep an 
 archive of how it all goes.
@@ -39,3 +34,17 @@ There are a few tips and tricks that I want to outline here so that they're form
      snack loop that I sometimes get into at night.
    - I'm thinking this is one of my __keystone habits__ that I simply just have to keep. As long as I do it, every other
      vital component ends up falling into place.
+
+# The numbers
+
+## 1/7/2026: 200.2
+
+So much for weighing once a week. I think I just need to do it more often to keep myself thinking correctly. Yes, there
+is some feeling bad if my weight doesn't go down, but maybe I need that to keep from indulging in bad habits?
+
+## 1/4/2026: 202.8
+
+I fully expected this weigh-in to come in high, and I was right. I'm fresh off of Christmas break and just eating
+whatever I want.
+
+Not a lot to say here, but at this point I just have to trust my process and follow through, everything else should fall into place.
