@@ -37,6 +37,10 @@ There are a few tips and tricks that I want to outline here so that they're form
 
 # The numbers
 
+## 1/9/2026: 197.6
+
+All righhhht. Finally getting going here~
+
 ## 1/7/2026: 200.2
 
 So much for weighing once a week. I think I just need to do it more often to keep myself thinking correctly. Yes, there
