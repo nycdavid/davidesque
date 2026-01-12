@@ -37,6 +37,11 @@ There are a few tips and tricks that I want to outline here so that they're form
 
 # The numbers
 
+## 1/12/2026: 197.8
+
+Slight increase, but I think that's to be expected on Mondays. I tend to eat a bit more on weekends because there's 
+less structure in terms of what I do. It's a lot of staying home and watching my younger son.
+
 ## 1/9/2026: 197.6
 
 All righhhht. Finally getting going here~
