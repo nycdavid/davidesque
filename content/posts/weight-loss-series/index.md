@@ -37,7 +37,7 @@ There are a few tips and tricks that I want to outline here so that they're form
 
 # The numbers
 
-## 1/12/2026: 195.8
+## 1/14/2026: 195.8
 
 Nothing much to say here. It might be too early to say that I've found my rhythm...but I think I have.
 
