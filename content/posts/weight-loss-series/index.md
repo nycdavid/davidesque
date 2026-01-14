@@ -37,6 +37,10 @@ There are a few tips and tricks that I want to outline here so that they're form
 
 # The numbers
 
+## 1/12/2026: 195.8
+
+Nothing much to say here. It might be too early to say that I've found my rhythm...but I think I have.
+
 ## 1/12/2026: 197.8
 
 Slight increase, but I think that's to be expected on Mondays. I tend to eat a bit more on weekends because there's 
