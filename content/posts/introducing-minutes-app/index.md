@@ -22,6 +22,33 @@ I'll let this blog post function as a README for the app, of sorts.
   - Metadata provided by the OS
   - Timestamp
 
+## Session groups and tags
+
+A __Session group__ can be thought of as a broad container for sessions. They allow sessions to be categorized together despite having 
+disparate application or metadata attributes.
+
+A __tag__ can be added to a session group and is a "regex-y" way to match any or all pieces of a session's metadata. It
+is a combination of _application_ and _metadata_ attributes. Both attributes support a basic query language somewhat
+akin to regex like:
+
+- `application: B*`, `metadata: *Blender*`: all sessions that have an application that starts with `B` and metadata
+  that has a substring of `Blender` anywhere in it.
+
+For example, let's say I have a personal goal of "Creating an animated movie". This is a large project that doesn't 
+cleanly fit into one type of session (application + metadata). During the course of working on this goal, I could be
+using any of the following:
+
+1. Google Chrome - Blender tutorial
+2. Blender - Project A
+3. Blender - Project B
+4. Ableton - Project A intro music
+5. Notion - Project A character notes
+6. etc.
+
+There are a lot of different programs that go into a single project. The idea behind session groups and tags is that
+we want to be able to unify sessions together that match a metadata pattern in order to aggregate time spent for a given
+session group.
+
 # Data aggregation
 
 The eventual goal is to be able to piece together a complete picture of how someone spends their time on their computer.
