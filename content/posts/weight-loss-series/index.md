@@ -7,7 +7,7 @@ title: 'Series: My Journey in Weight Loss'
 I've decided to start documenting my journey in weight loss as a way to keep myself accountable and to also keep an 
 archive of how it all goes.
 
-My overall goal is probably to get ~150 lbs, but I'm sure that can and will change as time goes on.
+My overall goal is probably to get to ~150 lbs, but I'm sure that can and will change as time goes on.
 
 Here's my starting point 7 months ago:  225.8 pounds.
 
