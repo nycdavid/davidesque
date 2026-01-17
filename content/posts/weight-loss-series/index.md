@@ -37,6 +37,12 @@ There are a few tips and tricks that I want to outline here so that they're form
 
 # The numbers
 
+## 1/16/2026: 195.6
+
+One thing I'm realizing is that there seems to be stable point that my weight drops to each week. Meaning, just because
+I was 195.8 on Wednesday, doesn't mean I'll continue to drop from there to, say, 193 on Friday. It seems to be more
+step-functioned than linear.
+
 ## 1/14/2026: 195.8
 
 Nothing much to say here. It might be too early to say that I've found my rhythm...but I think I have.
