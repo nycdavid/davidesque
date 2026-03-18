@@ -1,0 +1,27 @@
+{{- $pinned := where site.RegularPages ".Params.pinned" true }}
+{{- $pinned = sort $pinned ".Params.pinnedOrder" "asc" }}
+{{- if $pinned }}
+<section class="start-here">
+    <div class="start-here-header">
+        <span class="start-here-label">Start Here</span>
+        <span class="start-here-rule"></span>
+    </div>
+    <div class="start-here-grid">
+        {{- range $i, $page := $pinned }}
+        <a class="sh-card" href="{{ .Permalink }}">
+            <span class="sh-card-num">{{ printf "%02d" (add $i 1) }}</span>
+            <div class="sh-card-body">
+                {{- with .Params.pinnedCategory }}
+                <span class="sh-card-category">{{ . }}</span>
+                {{- end }}
+                <h3 class="sh-card-title">{{ .Title }}</h3>
+                {{- with .Params.pinnedDescription }}
+                <p class="sh-card-desc">{{ . }}</p>
+                {{- end }}
+                <span class="sh-card-cta">Read <span class="sh-arrow">→</span></span>
+            </div>
+        </a>
+        {{- end }}
+    </div>
+</section>
+{{- end }}

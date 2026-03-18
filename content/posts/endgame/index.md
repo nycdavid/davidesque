@@ -2,6 +2,10 @@
 date: '2025-12-30T05:54:44-05:00'
 draft: false
 title: 'Endgame'
+pinned: true
+pinnedOrder: 1
+pinnedCategory: "The Mission"
+pinnedDescription: "37, financially stable, and asking: what now? My personal manifesto on building something meaningful in the second half."
 ---
 
 There's a concept in Chess called the "endgame". This is when there are very few pieces left on the board and the 
