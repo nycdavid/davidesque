@@ -17,7 +17,6 @@ title: David(esque)
 params:
   homeInfoParams:
     Title: Actionable systems to build wealth, automate your life, and reclaim time as a working parent
-    Content: Hi, I'm David. Welcome to my blog!
   socialIcons:
     - name: Github
       url: https://github.com/nycdavid/

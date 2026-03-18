@@ -53,6 +53,7 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+{{- if not .IsHome }}
 {{- range $index, $page := $paginator.Pages }}
 
   {{- $class := "post-entry" }}
@@ -95,7 +96,6 @@
     </article>
   {{- end }}
 {{- end }}
-
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">
@@ -118,6 +118,7 @@
   </nav>
 </footer>
 {{- end }}
+{{- end }}{{/* end if not .IsHome */}}
 
 {{- end }}{{/* end profileMode */}}
 
