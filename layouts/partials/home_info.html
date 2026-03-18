@@ -5,15 +5,12 @@
         <h1 class="hero-headline">
             <span class="hero-line hero-line-1">Actionable systems to</span>
             <span class="hero-line hero-line-2"><em>build wealth,</em> <em>automate</em> your life,</span>
-            <span class="hero-line hero-line-3">and <em>reclaim time</em> as a working parent</span>
+            <span class="hero-line hero-line-3">and <em>reclaim time</em> as a busy parent</span>
         </h1>
     </header>
     <div class="hero-rule"></div>
     <div class="entry-content hero-content">
         {{ .Content | markdownify }}
     </div>
-    <footer class="entry-footer hero-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
 </article>
 {{- end -}}
