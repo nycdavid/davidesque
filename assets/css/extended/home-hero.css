@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap');
+
+/* ─── Hero overrides ─────────────────────────────────────────── */
+
+.home-hero {
+    padding: 2.5rem 0 2rem;
+    overflow: hidden;
+}
+
+.hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 0 0 1.25rem;
+    opacity: 0;
+    animation: heroFadeUp 0.5s ease 0.05s forwards;
+}
+
+/* Override theme's -webkit-line-clamp on .first-entry .entry-header */
+.home-hero .hero-header {
+    overflow: visible;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+}
+
+.hero-headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    font-weight: 300;
+    line-height: 1.18;
+    letter-spacing: -0.015em;
+    color: var(--primary);
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05em;
+}
+
+.hero-line {
+    display: block;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: heroFadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-line-1 { animation-delay: 0.12s; }
+.hero-line-2 { animation-delay: 0.26s; }
+.hero-line-3 { animation-delay: 0.40s; }
+
+.hero-headline em {
+    font-style: normal;
+    font-weight: 600;
+    color: #B8860B;
+    position: relative;
+}
+
+.hero-headline em::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.05em;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.35;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: heroUnderline 0.5s ease 0.85s forwards;
+}
+
+.dark .hero-headline em {
+    color: #D4A843;
+}
+
+/* ─── Decorative rule ────────────────────────────────────────── */
+
+.hero-rule {
+    width: 40px;
+    height: 2px;
+    background: #B8860B;
+    margin: 0 0 1.5rem;
+    opacity: 0;
+    animation: heroFadeUp 0.5s ease 0.58s forwards;
+}
+
+.dark .hero-rule {
+    background: #D4A843;
+}
+
+/* ─── Content / greeting ─────────────────────────────────────── */
+
+.hero-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 0;
+    -webkit-line-clamp: unset !important;
+    display: block !important;
+    opacity: 0;
+    animation: heroFadeUp 0.5s ease 0.68s forwards;
+}
+
+/* ─── Social icons ───────────────────────────────────────────── */
+
+.hero-footer {
+    opacity: 0;
+    animation: heroFadeUp 0.5s ease 0.8s forwards;
+    margin-top: 1.5rem;
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────── */
+
+@keyframes heroFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroUnderline {
+    to {
+        transform: scaleX(1);
+    }
+}
