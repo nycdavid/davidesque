@@ -2,10 +2,6 @@
 date: '2025-12-05T10:04:56-05:00'
 draft: false
 title: 'Series: Forensic Budgeting'
-pinned: true
-pinnedOrder: 2
-pinnedCategory: "Wealth"
-pinnedDescription: "We track every dollar in YNAB — but have no idea where it actually goes. A data-driven investigation into our household spending."
 tocSections:
   - title: "Baseline: where we're at now"
     live: true

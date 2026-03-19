@@ -1,0 +1,113 @@
+/* ─── Pretty table shortcode ─────────────────────────────────── */
+
+.dt-wrap {
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dt-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 0 0 0.6rem;
+}
+
+.dt-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+}
+
+/* Reset PaperMod's generic table styles inside our shortcode */
+.dt-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.dt-wrap table thead {
+    background: var(--entry);
+}
+
+.dt-wrap table thead th {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B8860B;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 2px solid #B8860B;
+    white-space: nowrap;
+    min-width: unset;
+}
+
+.dark .dt-wrap table thead th {
+    color: #D4A843;
+    border-bottom-color: #D4A843;
+}
+
+.dt-wrap table tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s ease;
+}
+
+.dt-wrap table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dt-wrap table tbody tr:hover {
+    background: var(--entry);
+}
+
+/* Subtle stripe */
+.dt-wrap table tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--entry) 60%, transparent);
+}
+
+.dt-wrap table tbody tr:nth-child(even):hover {
+    background: var(--entry);
+}
+
+.dt-wrap table tbody td {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 300;
+    color: var(--primary);
+    padding: 0.65rem 1rem;
+    line-height: 1.5;
+    border-bottom: none;
+    min-width: unset;
+    vertical-align: top;
+}
+
+/* First column slight emphasis */
+.dt-wrap table tbody td:first-child {
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* ─── Footer row ─────────────────────────────────────────────── */
+
+.dt-wrap table tfoot tr {
+    border-top: 2px solid #B8860B;
+}
+
+.dark .dt-wrap table tfoot tr {
+    border-top-color: #D4A843;
+}
+
+.dt-wrap table tfoot td {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: var(--primary);
+    padding: 0.75rem 1rem;
+    background: var(--entry);
+    border-bottom: none;
+    min-width: unset;
+}

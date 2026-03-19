@@ -1,0 +1,55 @@
+{{/*
+  Usage:
+    {{< table >}}
+    | Header 1 | Header 2 | Header 3 |
+    |----------|----------|----------|
+    | Cell     | Cell     | Cell     |
+    {{< /table >}}
+
+  Optional params:
+    caption="My caption"          — adds a caption above the table
+    col1="#D4A843"                 — color for all body cells in column 1
+    col2="green"                  — color for all body cells in column 2
+    (col1–col9 supported)
+    footer="Total | $479 | $547 | " — pipe-separated footer row values
+*/}}
+{{ $caption := .Get "caption" }}
+{{ $footer  := .Get "footer" }}
+{{ $id := printf "dt-%s" (substr (md5 .Inner) 0 8) }}
+
+{{ $colColors := slice }}
+{{ range $i := seq 1 9 }}
+  {{ $val := $.Get (printf "col%d" $i) }}
+  {{ if $val }}
+    {{ $colColors = $colColors | append (dict "idx" $i "color" $val) }}
+  {{ end }}
+{{ end }}
+
+{{ $tableHTML := .Inner | markdownify }}
+
+{{ if $footer }}
+  {{ $cells := split $footer "|" }}
+  {{ $tfootHTML := "<tfoot><tr>" }}
+  {{ range $cells }}
+    {{ $tfootHTML = printf "%s<td>%s</td>" $tfootHTML (trim . " ") }}
+  {{ end }}
+  {{ $tfootHTML = printf "%s</tr></tfoot>" $tfootHTML }}
+  {{ $tableHTML = replace $tableHTML "</table>" (printf "%s</table>" $tfootHTML) }}
+{{ end }}
+
+<div class="dt-wrap" id="{{ $id }}">
+  {{- with $caption }}<p class="dt-caption">{{ . }}</p>{{ end }}
+  <div class="dt-scroll">
+    {{ $tableHTML | safeHTML }}
+  </div>
+</div>
+
+{{ if $colColors }}
+<style>
+{{ range $colColors }}
+#{{ $id }} table tbody td:nth-child({{ .idx }}) {
+    color: {{ .color }};
+}
+{{ end }}
+</style>
+{{ end }}

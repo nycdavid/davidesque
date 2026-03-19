@@ -2,10 +2,6 @@
 date: '2026-01-05T04:10:53-05:00'
 draft: false
 title: 'Series: My Journey in Weight Loss'
-pinned: true
-pinnedOrder: 3
-pinnedCategory: "Reclaim Time"
-pinnedDescription: "225 lbs to 150 lbs, documented in real time. The habits, systems, and data behind losing weight as a busy working parent."
 ---
 
 I've decided to start documenting my journey in weight loss as a way to keep myself accountable and to also keep an 
