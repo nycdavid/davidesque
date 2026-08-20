@@ -19,19 +19,29 @@ That's not what it does.
 
 ## What Minimum Value actually controls
 
-__Minimum Value__ sets the *smallest possible output* for that property, expressed as a percentage of the maximum. It doesn't gate whether a stroke appears — it sets the floor of how thin, how transparent, or how sparse a stroke can get *even at the lightest pressure you apply*.
+__Minimum Value__ sets the lower bound for how much that property can be reduced by the selected input, such as pen pressure. It doesn't gate whether a stroke appears — it sets the floor of how thin, how transparent, or how sparse a stroke can get *even at the lightest input you apply*.
 
-In other words: your pen will still make a mark at the softest touch you're capable of. The question __Minimum Value__ answers isn't "will I make a mark?" — it's "how small can that mark be allowed to get?"
+I'm avoiding the phrase "percentage of the maximum" on purpose, because it's not always a clean, literal percentage. Brush size (or opacity, or density) doesn't just respond to pressure — CSP can also let tilt, velocity, and randomization influence the same property at the same time, and whatever pressure-response curve you've got set up shapes the result further. __Minimum Value__ is the floor on top of all of that, not a standalone formula.
 
-- __Minimum Value at 0__: the lightest pressure produces the thinnest/faintest possible line — potentially so faint it's barely visible.
-- __Minimum Value at 100__: pressure stops mattering at all for that property. Every stroke comes out at full size/opacity/density regardless of how hard you press.
+The question __Minimum Value__ answers isn't "will I make a mark?" — it's "how small can that mark be allowed to get?" And to be clear, that's not an absolute guarantee either: things like your tablet's activation threshold, or a very low opacity/density elsewhere in the brush settings, could still make an extremely light touch effectively invisible. The point isn't that Minimum Value guarantees visibility — it's that Minimum Value itself is *not* the "minimum pressure required to register" setting, which is what I originally assumed.
+
+- __Minimum Value at 0__: the lightest input produces the thinnest/faintest possible line — potentially so faint it's barely visible.
+- __Minimum Value at 100__: the input stops mattering at all for that property. Every stroke comes out at full size/opacity/density regardless of how hard you press.
 - Anything in between sets a floor somewhere between those two extremes.
 
-So it's not a pressure *threshold*, it's a pressure *range compressor*. It squeezes the bottom end of your pressure curve up (or down) to wherever you set it.
+For brush size specifically, I think of it like compressing the lower end of the available size range — it's not that CSP is literally transforming your pressure input, just that it won't let the *output* drop below whatever floor you've set.
+
+## My first test was misleading
+
+Before I settled on a clean test, I ran one that gave me confusing results, and the reason why turned out to be its own useful lesson.
+
+I was testing with Turnip Pen, and I had tilt enabled as an input affecting brush size — on top of pressure. So when I varied pressure and watched the line width change, I was actually seeing the *combined* effect of pressure and tilt, not pressure alone. Since CSP lets multiple inputs drive the same property simultaneously, my "pressure test" wasn't isolating pressure at all.
+
+Once I disabled tilt as an input for brush size and left only pressure active, the results got a lot more consistent and readable. That's the setup I used for the real test below.
 
 ## The 0/50/100 test
 
-I didn't want to just take this on faith, so I ran a quick test. Same brush, same pressure curve, same stroke — I just dragged the pen across the canvas at a light, consistent pressure three times, changing only __Minimum Value__ between passes.
+With tilt out of the picture, I ran the test properly. Same brush, same pressure curve, same stroke, pressure as the only active input — I dragged the pen across the canvas at a light, consistent pressure three times, changing only __Minimum Value__ between passes.
 
 - __0__: the stroke tapers down to almost nothing at the lightest pressure. Thin, faint, borderline invisible in spots.
 - __50__: the stroke never gets thinner/fainter than about half of max, even at that same light pressure. Noticeably more consistent.
