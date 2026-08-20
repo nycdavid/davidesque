@@ -4,7 +4,7 @@ draft: true
 title: 'What Does “Minimum Value” Mean in Clip Studio Paint?'
 description: 'Confused by Clip Studio Paint’s Minimum Value setting? Here’s what it actually controls, how 0/50/100 behave, and why pen pressure isn’t the same thing.'
 url: '/clip-studio-paint-minimum-value/'
-categories: ["Clip Studio Paint"]
+categories: ["Clip Studio Paint", "Art"]
 ---
 
 If you've poked around the Sub Tool Detail panel in Clip Studio Paint, you've probably run into a setting called __Minimum Value__ tucked under __Brush Size__ (or __Thickness__, __Density__, __Opacity__, depending on which slider you're looking at). And if you're like me, you took one look at that name and assumed you already knew what it did.
