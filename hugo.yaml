@@ -26,4 +26,22 @@ params:
       url: https://ko-fi.com/davidyoon7313
   mainSections: ["posts"]
 
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 10
+    - name: Art
+      url: /art/
+      weight: 20
+    - name: Music
+      url: /music/
+      weight: 30
+    - name: Code
+      url: /code/
+      weight: 40
+    - name: About
+      url: /about/
+      weight: 50
+
 
