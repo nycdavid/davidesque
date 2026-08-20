@@ -9,6 +9,8 @@ If you've poked around the Sub Tool Detail panel in Clip Studio Paint, you've pr
 
 I didn't. Here's the mistake I made, and what the setting is actually doing.
 
+__In short:__ Minimum Value controls the lowest output a brush property can reach when an input such as pen pressure is at its minimum. For Brush Size, a higher Minimum Value prevents light pressure from making the line as thin. At 100, pressure no longer changes brush size.
+
 ## What I thought Minimum Value meant
 
 I assumed __Minimum Value__ was the minimum amount of *pressure* required for the pen to leave a mark at all. Like a threshold: press lighter than this, and nothing shows up on the canvas.
@@ -21,7 +23,9 @@ That's not what it does.
 
 __Minimum Value__ sets the lower bound for how much that property can be reduced by the selected input, such as pen pressure. It doesn't gate whether a stroke appears — it sets the floor of how thin, how transparent, or how sparse a stroke can get *even at the lightest input you apply*.
 
-I'm avoiding the phrase "percentage of the maximum" on purpose, because it's not always a clean, literal percentage. Brush size (or opacity, or density) doesn't just respond to pressure — CSP can also let tilt, velocity, and randomization influence the same property at the same time, and whatever pressure-response curve you've got set up shapes the result further. __Minimum Value__ is the floor on top of all of that, not a standalone formula.
+For Brush Size, Minimum Value is a percentage of the brush size you've configured. If your brush is set to 50 px and Minimum Value is 50, then at the minimum pressure input the brush-size floor is 25 px. A Minimum Value of 100 keeps the brush at the full configured size.
+
+Other dynamics such as tilt and velocity can influence the same property too, so the final stroke may still be affected by more than pressure alone.
 
 The question __Minimum Value__ answers isn't "will I make a mark?" — it's "how small can that mark be allowed to get?" And to be clear, that's not an absolute guarantee either: things like your tablet's activation threshold, or a very low opacity/density elsewhere in the brush settings, could still make an extremely light touch effectively invisible. The point isn't that Minimum Value guarantees visibility — it's that Minimum Value itself is *not* the "minimum pressure required to register" setting, which is what I originally assumed.
 
@@ -49,7 +53,7 @@ With tilt out of the picture, I ran the test properly. Same brush, same pressure
 
 That's the moment it clicked for me — at no point did the line fail to appear, even at 0. The pen was never "not registering." What changed was how much room there was between the thinnest possible mark and the thickest one.
 
-## Why this actually matters for your brushes
+## What Should You Set Minimum Value To?
 
 Once I understood it as a floor instead of a threshold, a few things I'd been fighting with started making sense:
 
