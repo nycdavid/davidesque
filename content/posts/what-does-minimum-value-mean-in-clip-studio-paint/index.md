@@ -2,6 +2,8 @@
 date: '2026-08-20T06:28:13-04:00'
 draft: true
 title: 'What Does “Minimum Value” Mean in Clip Studio Paint?'
+description: 'Confused by Clip Studio Paint’s Minimum Value setting? Here’s what it actually controls, how 0/50/100 behave, and why pen pressure isn’t the same thing.'
+url: '/clip-studio-paint-minimum-value/'
 categories: ["Clip Studio Paint"]
 ---
 
