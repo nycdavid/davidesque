@@ -1,0 +1,11 @@
+/* ─── Post description (dek) ─────────────────────────────────── */
+
+.post-description {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--secondary);
+    margin: 6px 0 20px;
+}
