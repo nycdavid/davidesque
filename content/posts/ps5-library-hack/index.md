@@ -3,7 +3,7 @@ date: '2026-03-18T12:36:51-05:00'
 draft: false
 title: 'The Library Hack That Turned My PS5 Into a Free Purchase'
 pinned: true
-pinnedOrder: 1
+pinnedOrder: 2
 pinnedCategory: "Money Hacks"
 pinnedDescription: "I stopped buying games and my PS5 paid for itself."
 ---
