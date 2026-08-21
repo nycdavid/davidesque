@@ -5,6 +5,10 @@ title: 'What Does “Minimum Value” Mean in Clip Studio Paint?'
 description: 'Confused by Clip Studio Paint’s Minimum Value setting? Here’s what it actually controls, how 0/50/100 behave, and why pen pressure isn’t the same thing.'
 url: '/clip-studio-paint-minimum-value/'
 categories: ["Clip Studio Paint", "Art"]
+pinned: true
+pinnedOrder: 1
+pinnedCategory: "Clip Studio Paint"
+pinnedDescription: "I misread this setting for months. Here's what it actually controls."
 cover:
   image: "clip-studio-paint-minimum-value-0-50-100-pressure-only-test.png"
   alt: "Clip Studio Paint pressure-only test at Minimum Value 0, 50, and 100 showing consistent line thickness with tilt disabled"
@@ -107,11 +111,11 @@ If this saved you some head-scratching, buying me a coffee goes a long way towar
 Once I understood it as a floor instead of a threshold, a few things I'd been fighting with started making sense:
 
 - If your brush feels like it "disappears" on light passes, your __Minimum Value__ might be too low: 
-  raise it so regardless of how much pen pressure applied, the width can't go below a certain value.
+  raise it so regardless of how much pen pressure is applied, the width can't go below a certain value.
 - Likewise, if you want maximum pressure sensitivity (thin, tapering, expressive lines), you want __Minimum Value__ low, 
   closer to 0. This expands the left and right bounds of possible line thickness.
-- If you want a brush that behaves more like a stable, consistent marker regardless of hand pressure, push 
-  __Minimum Value__ up toward 100. This tightens the bounds of possible line value width.
+- If you want a brush that behaves more like a marker regardless of hand pressure, push __Minimum Value__ up toward 100. 
+  This tightens the bounds of the line width.
 
 It's a small setting, but it can introduce a lot of subtlety and nuance to your linework. It's definitely worth 
 experimenting with on your own brushes to find settings that you're happy with.
