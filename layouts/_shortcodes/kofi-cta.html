@@ -1,0 +1,25 @@
+{{/*
+  Usage:
+    {{< kofi-cta >}}
+    Message text goes here.
+    {{< /kofi-cta >}}
+
+  Optional params:
+    eyebrow="If this helped"                — small label above the message
+    label="Support on Ko-fi"                — button text
+    url="https://ko-fi.com/davidyoon7313"   — override link
+*/}}
+{{ $eyebrow := .Get "eyebrow" | default "If this helped" }}
+{{ $label := .Get "label" | default "Support on Ko-fi" }}
+{{ $url := .Get "url" | default "https://ko-fi.com/davidyoon7313" }}
+
+<div class="kofi-cta">
+  <div class="kofi-cta-body">
+    <p class="kofi-cta-eyebrow">{{ $eyebrow }}</p>
+    <p class="kofi-cta-message">{{ .Inner | markdownify }}</p>
+  </div>
+  <a class="kofi-cta-button" href="{{ $url }}" target="_blank" rel="noopener">
+    <span>{{ $label }}</span>
+    <span class="kofi-cta-arrow">&rarr;</span>
+  </a>
+</div>

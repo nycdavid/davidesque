@@ -1,0 +1,78 @@
+/* ─── Ko-fi support callout ──────────────────────────────────── */
+
+.kofi-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-left: 3px solid #B8860B;
+    border-radius: var(--radius);
+}
+
+.dark .kofi-cta {
+    border-left-color: #D4A843;
+}
+
+.kofi-cta-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.kofi-cta-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 0 0 0.4rem;
+}
+
+.kofi-cta-message {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary);
+    margin: 0;
+}
+
+.kofi-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    flex-shrink: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: #B8860B;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dark .kofi-cta-button {
+    color: #D4A843;
+}
+
+.kofi-cta-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.kofi-cta-button:hover .kofi-cta-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 560px) {
+    .kofi-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
