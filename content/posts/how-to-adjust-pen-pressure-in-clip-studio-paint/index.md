@@ -19,7 +19,8 @@ inconsistent across *every* brush in the first place. That's a different setting
 Pressure Settings__, the global calibration Clip Studio Paint runs on your tablet's raw input before any brush
 ever sees it.
 
-__In short:__ Pen Pressure Settings (File → Pen Pressure Settings on both Windows and macOS) calibrates how your
+__In short:__ Pen Pressure Settings (File → Pen Pressure Settings on Windows, CLIP STUDIO PAINT → Pen Pressure
+Settings on macOS) calibrates how your
 tablet's raw pressure signal maps to Clip Studio Paint's internal 0-100 pressure value. It doesn't touch any
 individual brush's behavior. A brush's own pressure response, including things like Minimum Value, is configured
 separately in that brush's Sub Tool Detail settings. If your whole pen feels off across every tool, fix the global
@@ -56,9 +57,12 @@ individual brushes.
 
 ## How to open the dialog
 
-On both Windows and macOS, the path is:
+The menu location depends on your platform:
 
-__File → Pen Pressure Settings__
+- __Windows:__ File → Pen Pressure Settings
+- __macOS:__ CLIP STUDIO PAINT → Pen Pressure Settings
+
+![CLIP STUDIO PAINT macOS menu bar showing Pen Pressure Settings under the CLIP STUDIO PAINT menu](clip-studio-paint-pen-pressure-settings-macos-menu.png#center)
 
 This is a system-level dialog, not something tied to your current brush or Sub Tool. It applies to your input
 device as a whole, so you only need to set it up once per tablet (though it's worth revisiting if you switch
@@ -133,7 +137,7 @@ or has Pressure unchecked as an input entirely. Neither of those is something gl
 ## Quick way to tell which one you're dealing with
 
 If the problem shows up on every brush, every tool, and every layer, it's the global calibration. Fix that
-first with File → Pen Pressure Settings.
+first with Pen Pressure Settings (File on Windows, CLIP STUDIO PAINT on macOS).
 
 If it's isolated to one brush while everything else feels normal, it's that brush's own settings. Global
 recalibration will do nothing for it, because the pressure value it's receiving was never the issue.
