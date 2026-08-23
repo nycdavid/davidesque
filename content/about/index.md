@@ -1,24 +1,30 @@
 ---
 date: '2025-10-24T09:08:36-04:00'
 draft: false
-title: 'What is this blog about?'
+title: 'About'
 ---
 
-Good question. This blog doesn't yet have a single focus. Maybe it never will, but I _am_ interested in a handful of things:
+This blog is Kubernetes and Go for people who actually have to run the thing in production, and Clip Studio
+Paint settings explained by someone still working them out by hand. I'm David, and both halves come from stuff
+I'm doing anyway, not stuff I'm performing for an audience.
 
-1. Writing code (I'm a software engineer by trade). Specifically:
-   - Golang
-   - DevOps technologies: Kubernetes, Argo family of products, etc.
-   - General homelabbing and home automation systems
-2. Listening to, playing and writing music.
-   - I started playing guitar in middle school and recently (at the ripe age of 37) bought an electronic drum set to teach myself drums.
-3. I really like movies and any other mediums (video games, television, etc.) that are capable of delivering a compelling narrative.
-   - Media that uses great music is particularly impactful for me and leaves a lasting impression. 
-   - Examples of this would be:
-     - The [Facemash scene](https://www.youtube.com/watch?v=MUnSW8xOd0A&t=70s) from The Social Network set to the OST track "In Motion" by Trent Reznor and Atticus Ross.
-     - The use of Rush's "Tom Sawyer" in the [trailer for The Iron Claw](https://youtu.be/8KVsaoveTbw?si=IScfSgnZAD2FC609&t=52) and the way they integrate a minor key.
-     - Anadel's "Remember Me" during the [credits of episode 3](https://youtu.be/Ov0vtJHPKqY?si=AJp4DJST7yxjjPdp) of Telltale Games' The Walking Dead (Season 2)
-4. Personal finance, investing and FI/RE, although I'm not quite sure what I would write about here that hasn't already been said...
-5. Being a good parent and raising my 2 sons as productive, capable members of society (who don't hate me).
+__Software engineering.__ Go, Kubernetes, and the DevOps stack around it: controllers, debugging tricky
+concurrency bugs, homelab setups. [Read everything in this category](/code/), or start with
+[what a Kubernetes controller actually is](/what-is-a-k8s-controller/) for the deep-dive version.
 
-Expect this list to change but these are my interests today. At the very least, I hope this blog can serve as some kind of time capsule for future generations of my family.
+__Clip Studio Paint.__ I'm teaching myself to draw manga, and most of what I learn along the way turns into a
+post here, especially the settings that are badly documented or easy to misunderstand. [Read everything in this
+category](/art/), or start with [what Minimum Value actually controls](/clip-studio-paint-minimum-value/).
+
+Most of what ends up here started as something I got wrong first. I'd rather write down what a setting actually
+does once I've worked it out than relearn it from scratch in six months.
+
+<!-- placeholder: a concrete credibility detail would strengthen this page — years doing this work, scale of
+systems you've run, how long you've been drawing, whatever's true and you're comfortable naming. Left out rather
+than invented. -->
+
+If you'd rather skim the highlights than dig through everything, [start here](/).
+
+{{< kofi-cta eyebrow="Enjoying the blog" >}}
+If a post here has saved you time, a coffee goes a long way toward keeping them coming.
+{{< /kofi-cta >}}
