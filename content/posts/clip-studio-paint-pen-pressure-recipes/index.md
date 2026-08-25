@@ -106,9 +106,9 @@ between those two points is a separate thing you can edit directly, and it's wha
 fattens as pressure increases. A steep curve gives you a fast, confident swell instead of a gradual one, which is
 what a real nib's flex feels like.
 
-<!-- screenshot: the pressure curve editor inside Brush Size Dynamics, showing the reshaped curve (low start, steep rise) -->
+![Clip Studio Paint Brush Size Dynamics pressure curve for a dip pen nib recipe, reshaped with a flat low end and a steep S-curve rise so light pressure stays thin before the line swells](clip-studio-paint-dip-pen-pressure-curve-dynamics-settings.png#center)
 
-<!-- screenshot/video: the actual nib stroke this produces, showing the thin start, the swell through the middle, and the point at the tail -->
+![Clip Studio Paint dip pen nib stroke example in blue ink showing a thin start, a confident swell through the middle of the stroke, and a tapered point at the tail](clip-studio-paint-dip-pen-nib-stroke-example.png#center)
 
 {{< kofi-cta >}}
 If these recipes save you some trial and error, buying me a coffee helps keep posts like this coming.
