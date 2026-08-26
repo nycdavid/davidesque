@@ -16,7 +16,7 @@ __Dynamics__ system covered in
 the mechanics here, just pointing at exactly which knob produces each look and why.
 
 Treat every number below as a starting point, not a tested constant. Your tablet's own pressure curve, your
-brush's base size, and your hand all shift where these land, so nudge by eye once you're in the ballpoint.
+brush's base size, and your hand all shift where these land, so nudge by eye once you're actually drawing.
 
 ## 1. Ballpoint pen
 
@@ -44,7 +44,7 @@ setting is actually doing at brush sizes where it's big enough to matter.
 
 __The look:__ thick, confident strokes that taper to a fine point, the kind you get from an angled brush pen.
 
-__The setting:__ I'm going to be using the Turnip pen here (to keep all variables as consistent as possible) but you'd 
+__The setting:__ I'm going to be using the Turnip pen here (to keep all variables as consistent as possible), but you'd 
 typically use a brush with a flat or angled tip for this style. 
 
 Open Brush Size Dynamics and link size to __Tilt__ instead of Pressure, with Minimum Value near 0 so the full range 
@@ -57,7 +57,7 @@ calligraphic work here.
 
 ![Clip Studio Paint Brush Size Dynamics panel for a calligraphy brush recipe showing Tilt enabled instead of Pen pressure, with a steep curve mapping a more horizontal pen angle to a wider stroke](clip-studio-paint-calligraphy-brush-size-dynamics-tilt-settings.png#center)
 
-{{< figure src="clip-studio-paint-calligraphy-brush-stroke-example.png" alt="Clip Studio Paint calligraphy brush stroke example showing bold, thick strokes that taper sharply to thin points" caption="Obviously, I'm not at all a calligrapher, but hopefully this illustrates how tilt can achieve something like the thick-to-thin whispiness that Japanese calligraphy is known for." align="center" >}}
+{{< figure src="clip-studio-paint-calligraphy-brush-stroke-example.png" alt="Clip Studio Paint calligraphy brush stroke example showing bold, thick strokes that taper sharply to thin points" caption="Obviously, I'm not at all a calligrapher, but hopefully this illustrates how tilt can achieve something like the thick-to-thin wispiness that Japanese calligraphy is known for." align="center" >}}
 
 ## 3. Graphite pencil sketch
 
@@ -75,7 +75,7 @@ __Why it looks like this:__ this splits the two things a real pencil does into t
 control them. Tilt driving Size mimics how laying a pencil flatter widens the mark, while Pressure driving Opacity
 gives you the value control (how dark) that pressing harder adds on real paper. Layer both dynamics on the same
 brush and a single stroke can drift from a faint, narrow hint to a wide, dark mark without you touching the brush
-size slider yourself.
+size slider.
 
 {{< rawhtml >}}
 <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:center; gap:16px; margin:1.5rem 0;">
