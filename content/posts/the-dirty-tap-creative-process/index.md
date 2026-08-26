@@ -2,6 +2,7 @@
 date: '2025-09-23T09:47:01-04:00'
 draft: false
 title: 'The creative process is a dirty tap'
+categories: ["Music"]
 ---
 
 I’m mildly (to put it mildly) obsessed with the creative process. I really enjoy writing music, but the circumstances of my life are such that I don’t get to do it very often. I have both a family and a full-time job in tech that take up the lion’s share of my time.

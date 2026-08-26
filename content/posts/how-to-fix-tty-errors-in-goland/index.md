@@ -2,6 +2,7 @@
 date: '2025-08-15T10:05:04-04:00'
 draft: false
 title: 'How to fix TTY errors in GoLand'
+categories: ["Go", "Code"]
 ---
 
 If you've tried to run TUI-based apps in GoLand for debugging purposes, you may have seen the following error:

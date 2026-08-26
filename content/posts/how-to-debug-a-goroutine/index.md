@@ -2,6 +2,7 @@
 date: '2025-08-21T15:05:25-04:00'
 draft: false
 title: 'How to Debug a Goroutine'
+categories: ["Go", "Code"]
 ---
 
 ## Quick note about editors/IDEs

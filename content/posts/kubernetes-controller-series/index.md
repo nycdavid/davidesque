@@ -2,6 +2,7 @@
 date: '2025-12-04T09:16:27-05:00'
 draft: false
 title: 'Series: Kubernetes Controllers'
+categories: ["Kubernetes", "Code"]
 tocSections:
   - title: 'What is a Kubernetes controller?'
     live: true

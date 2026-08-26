@@ -2,6 +2,7 @@
 date: '2025-08-18T10:05:04-04:00'
 draft: false
 title: How to unit test a function that uses time.Ticker
+categories: ["Go", "Code"]
 ---
 
 I found the following code on the [__/r/golang__ subreddit](https://www.reddit.com/r/golang/comments/18s1jpu/how_to_unit_test_this_goroutine_select_that_uses/). 

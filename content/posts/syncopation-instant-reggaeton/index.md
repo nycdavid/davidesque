@@ -2,6 +2,7 @@
 date: '2025-12-30T06:26:35-05:00'
 draft: false
 title: 'Syncopation == Instant Reggaeton ?!?'
+categories: ["Music"]
 ---
 
 Here's a little music production _tapa_ for you:

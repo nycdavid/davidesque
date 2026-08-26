@@ -2,6 +2,7 @@
 date: '2026-01-06T06:58:26-05:00'
 draft: false
 title: 'Introducing: The Minutes App'
+categories: ["Projects", "Code"]
 ---
 
 For the last few weeks, I've been building a macOS application that I want to be able to use to track where I spend my 

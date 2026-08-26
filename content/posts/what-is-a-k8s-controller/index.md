@@ -3,6 +3,11 @@ date: '2025-12-04T09:27:39-05:00'
 draft: false
 title: 'What is a Controller?'
 series: "kubernetes-controller"
+categories: ["Kubernetes", "Code"]
+pinned: true
+pinnedOrder: 4
+pinnedCategory: "Kubernetes"
+pinnedDescription: "The thermostat analogy that finally made controllers click for me."
 ---
 
 The best way to think about a controller is like a thermostat in a house. A thermostat's job is to maintain a threshold 
