@@ -77,12 +77,13 @@ gives you the value control (how dark) that pressing harder adds on real paper. 
 brush and a single stroke can drift from a faint, narrow hint to a wide, dark mark without you touching the brush
 size slider yourself.
 
-![Clip Studio Paint Sketch brush category with the Pencil tool selected, brush size set to 57.7 and opacity at 100 for a graphite pencil sketch recipe](clip-studio-paint-graphite-pencil-brush-tool-selection.png#center)
-
 {{< rawhtml >}}
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:1.5rem 0;">
-  <img src="clip-studio-paint-graphite-pencil-brush-size-dynamics-tilt-settings.png" alt="Clip Studio Paint Brush Size Dynamics panel for a graphite pencil sketch recipe showing Tilt linked to brush size with an 85 to 400 percent range and a light Pen pressure minimum of 10" loading="lazy" style="flex: 1 1 300px; max-width: 340px; height: auto; margin: 0; border-radius: 4px;">
-  <img src="clip-studio-paint-graphite-pencil-opacity-dynamics-pressure-settings.png" alt="Clip Studio Paint Opacity Dynamics panel for a graphite pencil sketch recipe showing Pen pressure linked to opacity with Minimum Value at 0 and a straight linear curve" loading="lazy" style="flex: 1 1 300px; max-width: 340px; height: auto; margin: 0; border-radius: 4px;">
+<div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:center; gap:16px; margin:1.5rem 0;">
+  <img src="clip-studio-paint-graphite-pencil-brush-tool-selection.png" alt="Clip Studio Paint Sketch brush category with the Pencil tool selected, brush size set to 57.7 and opacity at 100 for a graphite pencil sketch recipe" loading="lazy" style="flex: 0 1 240px; width: 240px; max-width: 100%; height: auto; margin: 0; border-radius: 4px;">
+  <div style="display:flex; flex-direction:column; gap:12px; flex: 1 1 300px; max-width: 480px;">
+    <img src="clip-studio-paint-graphite-pencil-brush-size-dynamics-tilt-settings.png" alt="Clip Studio Paint Brush Size Dynamics panel for a graphite pencil sketch recipe showing Tilt linked to brush size with an 85 to 400 percent range and a light Pen pressure minimum of 10" loading="lazy" style="width: 100%; height: auto; margin: 0; border-radius: 4px;">
+    <img src="clip-studio-paint-graphite-pencil-opacity-dynamics-pressure-settings.png" alt="Clip Studio Paint Opacity Dynamics panel for a graphite pencil sketch recipe showing Pen pressure linked to opacity with Minimum Value at 0 and a straight linear curve" loading="lazy" style="width: 100%; height: auto; margin: 0; border-radius: 4px;">
+  </div>
 </div>
 {{< /rawhtml >}}
 
