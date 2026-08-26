@@ -1,10 +1,14 @@
 ---
 date: '2026-08-23T06:00:00-04:00'
-draft: true
+draft: false
 title: '4 Pen Pressure Recipes for Different Drawing Styles in Clip Studio Paint'
 description: 'Ballpoint pen, brush calligraphy, pencil shading, and more: the specific Dynamics settings that get you each look in Clip Studio Paint, and why each one works the way it does.'
 url: '/clip-studio-paint-pen-pressure-recipes/'
 categories: ["Clip Studio Paint", "Art"]
+pinned: true
+pinnedOrder: 3
+pinnedCategory: "Clip Studio Paint"
+pinnedDescription: "Four Dynamics setups I keep coming back to, from a flat ballpoint line to a nib's confident swell."
 ---
 
 <!-- cover image once captured: a strip showing all 4 stroke styles side by side -->
