@@ -11,9 +11,10 @@ categories: ["Clip Studio Paint", "Art"]
 
 Every recipe below is the same idea applied four different ways: pick a property, decide which input drives it
 (pressure, tilt, or velocity), and decide how far that input is allowed to push it. That's the whole per-brush
-__Dynamics__ system covered in
-[Pen Pressure Settings Explained: Global vs. Per-Brush](/clip-studio-paint-pen-pressure/). I'm not re-explaining
-the mechanics here, just pointing at exactly which knob produces each look and why.
+__Dynamics__ system, and one setting inside it, Minimum Value, comes up in every recipe below. If you haven't run
+into it before, [What Does "Minimum Value" Mean in Clip Studio Paint?](/clip-studio-paint-minimum-value/) covers
+what it actually controls. I'm not re-explaining the mechanics here, just pointing at exactly which knob produces
+each look and why.
 
 Treat every number below as a starting point, not a tested constant. Your tablet's own pressure curve, your
 brush's base size, and your hand all shift where these land, so nudge by eye once you're in the ballpark.
