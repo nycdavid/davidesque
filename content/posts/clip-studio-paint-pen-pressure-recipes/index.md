@@ -24,9 +24,9 @@ __The look:__ a mostly flat, consistent line that barely reacts to how hard you 
 ballpoint does, but not perfectly rigid: real ballpoint strokes still show a hair of taper right where the pen
 first touches down and where it lifts off.
 
-__The setting:__ the setting that actually matters here isn't Minimum Value, it's brush size. Set the brush
-itself small, around 2-4px, and leave pressure linked to Size like normal. Minimum Value barely matters at this
-scale, even at 0 it still reads as a ballpoint with a small natural taper.
+__The setting:__ focus on brush size here, not Minimum Value. Set the brush itself small, around 2-4px, and leave
+pressure linked to Size like normal. Minimum Value barely matters at this scale, even at 0 it still reads as a
+ballpoint with a small natural taper.
 
 __Why it looks like this:__ Minimum Value is a percentage of the brush's configured size, not a fixed pixel
 amount. On a 50px brush, the gap between Minimum Value 0 and 100 spans dozens of visible pixels. On a 3px brush,
