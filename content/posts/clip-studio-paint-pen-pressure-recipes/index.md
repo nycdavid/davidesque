@@ -64,16 +64,29 @@ calligraphic work here.
 __The look:__ soft, buildable shading where light passes barely show up and pressing harder darkens the area,
 closer to how graphite actually behaves on paper.
 
-__The setting:__ on a pencil-textured brush, link __Opacity__ (or Density) to Pressure instead of Size, and keep
-Minimum Value low on that property so light passes stay genuinely faint.
+__The setting:__ start with the Sketch category's __Pencil__ brush, since its built-in texture already reads as
+graphite. Then wire up two Dynamics panels at once. Link __Tilt__ to Brush Size with a wide range, something like
+85% to 400%, so laying the pencil flatter fattens the stroke the way the flat edge of a real pencil does, and keep
+Pen pressure's own Minimum Value low (around 10) so pressure barely shrinks the line back down on its own.
+Separately, link __Opacity__ (or Density) to Pressure with Minimum Value at 0, so a light pass stays faint and a
+hard pass builds all the way up to full strength.
 
-__Why it looks like this:__ pressure driving opacity instead of size gives you value control (how dark) rather
-than width control (how thick), which is what shading actually needs. A pencil brush with pressure wired to size
-instead would just draw fatter lines, not darker ones.
+__Why it looks like this:__ this splits the two things a real pencil does into the two inputs that actually
+control them. Tilt driving Size mimics how laying a pencil flatter widens the mark, while Pressure driving Opacity
+gives you the value control (how dark) that pressing harder adds on real paper. Layer both dynamics on the same
+brush and a single stroke can drift from a faint, narrow hint to a wide, dark mark without you touching the brush
+size slider yourself.
 
-<!-- screenshot: Dynamics panel showing Opacity (or Density) linked to Pressure instead of Size, low Minimum Value on that property -->
+![Clip Studio Paint Sketch brush category with the Pencil tool selected, brush size set to 57.7 and opacity at 100 for a graphite pencil sketch recipe](clip-studio-paint-graphite-pencil-brush-tool-selection.png#center)
 
-<!-- screenshot/video: the actual shaded patch this produces, built up from light to heavy pressure, opacity changing while width stays constant -->
+{{< rawhtml >}}
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:1.5rem 0;">
+  <img src="clip-studio-paint-graphite-pencil-brush-size-dynamics-tilt-settings.png" alt="Clip Studio Paint Brush Size Dynamics panel for a graphite pencil sketch recipe showing Tilt linked to brush size with an 85 to 400 percent range and a light Pen pressure minimum of 10" loading="lazy" style="flex: 1 1 300px; max-width: 340px; height: auto; margin: 0; border-radius: 4px;">
+  <img src="clip-studio-paint-graphite-pencil-opacity-dynamics-pressure-settings.png" alt="Clip Studio Paint Opacity Dynamics panel for a graphite pencil sketch recipe showing Pen pressure linked to opacity with Minimum Value at 0 and a straight linear curve" loading="lazy" style="flex: 1 1 300px; max-width: 340px; height: auto; margin: 0; border-radius: 4px;">
+</div>
+{{< /rawhtml >}}
+
+![Clip Studio Paint graphite pencil sketch stroke example showing looping pencil lines that vary from faint light passes to dark heavy strokes with visible width changes from tilt](clip-studio-paint-graphite-pencil-sketch-stroke-example.png#center)
 
 ## 4. Dip pen / nib line
 
