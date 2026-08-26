@@ -16,7 +16,7 @@ __Dynamics__ system covered in
 the mechanics here, just pointing at exactly which knob produces each look and why.
 
 Treat every number below as a starting point, not a tested constant. Your tablet's own pressure curve, your
-brush's base size, and your hand all shift where these land, so nudge by eye once you're actually drawing.
+brush's base size, and your hand all shift where these land, so nudge by eye once you're in the ballpark.
 
 ## 1. Ballpoint pen
 
