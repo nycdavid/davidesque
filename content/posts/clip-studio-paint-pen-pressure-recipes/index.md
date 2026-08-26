@@ -1,15 +1,15 @@
 ---
 date: '2026-08-23T06:00:00-04:00'
 draft: true
-title: '5 Pen Pressure Recipes for Different Drawing Styles in Clip Studio Paint'
+title: '4 Pen Pressure Recipes for Different Drawing Styles in Clip Studio Paint'
 description: 'Ballpoint pen, brush calligraphy, pencil shading, and more: the specific Dynamics settings that get you each look in Clip Studio Paint, and why each one works the way it does.'
 url: '/clip-studio-paint-pen-pressure-recipes/'
 categories: ["Clip Studio Paint", "Art"]
 ---
 
-<!-- cover image once captured: a strip showing all 5 stroke styles side by side -->
+<!-- cover image once captured: a strip showing all 4 stroke styles side by side -->
 
-Every recipe below is the same idea applied five different ways: pick a property, decide which input drives it
+Every recipe below is the same idea applied four different ways: pick a property, decide which input drives it
 (pressure, tilt, or velocity), and decide how far that input is allowed to push it. That's the whole per-brush
 __Dynamics__ system covered in
 [Pen Pressure Settings Explained: Global vs. Per-Brush](/clip-studio-paint-pen-pressure/). I'm not re-explaining
@@ -110,23 +110,6 @@ what a real nib's flex feels like.
 If these recipes save you some trial and error, buying me a coffee helps keep posts like this coming.
 {{< /kofi-cta >}}
 
-## 5. Alcohol marker flat fill
-
-__The look:__ flat, even color that doesn't vary no matter how you press, the way a marker lays down ink
-regardless of hand pressure.
-
-__The setting:__ the most direct route: don't link Pressure to anything on this brush at all. Leave Size and
-Opacity both set to their Dynamics icon showing "off." Optionally link __Velocity__ to Size instead, so a fast
-drag gives a slightly different edge than a slow one, without pressure being part of the equation.
-
-__Why it looks like this:__ this is the reminder that Dynamics inputs are opt-in, not mandatory. A brush with
-nothing linked to Pressure is immune to everything covered in the Global vs. Per-Brush post, because there's no
-pressure value being read in the first place. Sometimes the right setting is no setting.
-
-<!-- screenshot: Dynamics panel showing both Size and Opacity with the Dynamics icon set to "off" for Pressure -->
-
-<!-- screenshot/video: the actual marker strokes this produces, several passes at very different hand pressure all coming out visually identical -->
-
 ## Quick reference
 
 | Look | Property changed | Input |
@@ -135,8 +118,7 @@ pressure value being read in the first place. Sometimes the right setting is no 
 | Brush calligraphy | Size | Tilt |
 | Pencil sketch | Opacity | Pressure |
 | Dip pen | Size | Pressure curve shape |
-| Alcohol marker | none linked | Velocity (optional) |
 
-Five looks, but really only three moves: which property you're driving, which input drives it, and how far you
+Four looks, but really only three moves: which property you're driving, which input drives it, and how far you
 let that input push it. Once you can name those three things for a brush you like, you can reverse-engineer
 pretty much any pressure-based look you run into.
