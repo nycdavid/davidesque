@@ -1,15 +1,15 @@
 ---
 date: '2026-08-23T06:00:00-04:00'
 draft: true
-title: '6 Pen Pressure Recipes for Different Drawing Styles in Clip Studio Paint'
-description: 'Ballpoint pen, brush calligraphy, spray paint, and more: the specific Dynamics settings that get you each look in Clip Studio Paint, and why each one works the way it does.'
+title: '5 Pen Pressure Recipes for Different Drawing Styles in Clip Studio Paint'
+description: 'Ballpoint pen, brush calligraphy, pencil shading, and more: the specific Dynamics settings that get you each look in Clip Studio Paint, and why each one works the way it does.'
 url: '/clip-studio-paint-pen-pressure-recipes/'
 categories: ["Clip Studio Paint", "Art"]
 ---
 
-<!-- cover image once captured: a strip showing all 6 stroke styles side by side -->
+<!-- cover image once captured: a strip showing all 5 stroke styles side by side -->
 
-Every recipe below is the same idea applied six different ways: pick a property, decide which input drives it
+Every recipe below is the same idea applied five different ways: pick a property, decide which input drives it
 (pressure, tilt, or velocity), and decide how far that input is allowed to push it. That's the whole per-brush
 __Dynamics__ system covered in
 [Pen Pressure Settings Explained: Global vs. Per-Brush](/clip-studio-paint-pen-pressure/). I'm not re-explaining
@@ -59,23 +59,7 @@ calligraphic work here.
 
 {{< figure src="clip-studio-paint-calligraphy-brush-stroke-example.png" alt="Clip Studio Paint calligraphy brush stroke example showing bold, thick strokes that taper sharply to thin points" caption="Obviously, I'm not at all a calligrapher, but hopefully this illustrates how tilt can achieve something like the thick-to-thin whispiness that Japanese calligraphy is known for." align="center" >}}
 
-## 3. Spray paint can
-
-__The look:__ a soft, scattered cloud of texture instead of a clean line, like an actual aerosol can.
-
-__The setting:__ switch to a brush with the __Spraying Effect__ enabled (CSP's Airbrush category has these
-built in). Link __Particle Density__ to Pressure so a harder press lays down more coverage, and set __Spray
-Deviation__ low so particles stay close to the center of the stroke instead of spreading into a line.
-
-__Why it looks like this:__ this is the clearest example of pressure driving something other than size. Nothing
-about the brush's width is changing at all, pressure is only controlling how dense the scatter is, which is why
-it reads as texture instead of a line.
-
-<!-- screenshot: Spraying Effect brush settings showing Particle Density linked to Pressure and Spray Deviation set low -->
-
-<!-- screenshot/video: the actual spray paint stroke this produces, a light pass next to a hard pass showing sparse vs. dense coverage -->
-
-## 4. Graphite pencil sketch
+## 3. Graphite pencil sketch
 
 __The look:__ soft, buildable shading where light passes barely show up and pressing harder darkens the area,
 closer to how graphite actually behaves on paper.
@@ -83,16 +67,15 @@ closer to how graphite actually behaves on paper.
 __The setting:__ on a pencil-textured brush, link __Opacity__ (or Density) to Pressure instead of Size, and keep
 Minimum Value low on that property so light passes stay genuinely faint.
 
-__Why it looks like this:__ this is the same lesson as the spray can from the opposite direction: pressure
-driving opacity instead of size gives you value control (how dark) rather than width control (how thick), which
-is what shading actually needs. A pencil brush with pressure wired to size instead would just draw fatter lines,
-not darker ones.
+__Why it looks like this:__ pressure driving opacity instead of size gives you value control (how dark) rather
+than width control (how thick), which is what shading actually needs. A pencil brush with pressure wired to size
+instead would just draw fatter lines, not darker ones.
 
 <!-- screenshot: Dynamics panel showing Opacity (or Density) linked to Pressure instead of Size, low Minimum Value on that property -->
 
 <!-- screenshot/video: the actual shaded patch this produces, built up from light to heavy pressure, opacity changing while width stays constant -->
 
-## 5. Dip pen / nib line
+## 4. Dip pen / nib line
 
 __The look:__ a line that starts thin, swells confidently through the middle of a stroke, and snaps back to a
 point at the tail, the classic ink-nib flick.
@@ -114,7 +97,7 @@ what a real nib's flex feels like.
 If these recipes save you some trial and error, buying me a coffee helps keep posts like this coming.
 {{< /kofi-cta >}}
 
-## 6. Alcohol marker flat fill
+## 5. Alcohol marker flat fill
 
 __The look:__ flat, even color that doesn't vary no matter how you press, the way a marker lays down ink
 regardless of hand pressure.
@@ -137,11 +120,10 @@ pressure value being read in the first place. Sometimes the right setting is no 
 |---|---|---|
 | Ballpoint pen | Size | small brush size, Minimum Value barely matters |
 | Brush calligraphy | Size | Tilt |
-| Spray paint | Particle Density | Pressure |
 | Pencil sketch | Opacity | Pressure |
 | Dip pen | Size | Pressure curve shape |
 | Alcohol marker | none linked | Velocity (optional) |
 
-Six looks, but really only three moves: which property you're driving, which input drives it, and how far you
+Five looks, but really only three moves: which property you're driving, which input drives it, and how far you
 let that input push it. Once you can name those three things for a brush you like, you can reverse-engineer
 pretty much any pressure-based look you run into.
