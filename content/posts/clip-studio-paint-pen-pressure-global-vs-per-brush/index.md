@@ -19,7 +19,7 @@ does on a single brush. Fixing Minimum Value changed _that_ brush. It didn't tou
 because Minimum Value isn't a pressure setting on its own, it's one knob inside a much bigger system. This post
 is that system, laid out end to end.
 
-__In short:__ your pressure ends up on canvas after passing through three separate layers: your tablet's own
+__In short:__ your mark ends up on canvas after passing through three separate pressure layers: your tablet's own
 driver, Clip Studio Paint's global __Pen Pressure Settings__ (which calibrates that raw signal into CSP's
 internal 0-100 value), and then that specific brush's own __Dynamics__ settings in its Sub Tool Detail panel
 (which decide what the brush actually does with that value). Diagnosing a pressure problem means figuring out
@@ -44,6 +44,11 @@ problem is in layer 2, or vice versa. The two settings share a name and _look_ l
 thing but they aren't.
 
 ## Where each one lives
+
+The tablet driver setting will be different across vendors but will most likely live in the driver software. I'm
+currently using the Huion Kamvas 16 Gen 3 on MacOS so mine looks like this:
+
+![Huion Kamvas tablet driver software showing the pen pressure curve settings used to calibrate raw pressure input on macOS](huion-kamvas-tablet-driver-pressure-curve.png#center)
 
 The global setting is under __CLIP STUDIO PAINT → Pen Pressure Settings__ on macOS, or __File → Pen Pressure
 Settings__ on Windows. It's a Studio Mode menu item, not something tied to your current tool.
