@@ -48,7 +48,7 @@ thing but they aren't.
 The tablet driver setting will be different across vendors but will most likely live in the driver software. I'm
 currently using the Huion Kamvas 16 Gen 3 on MacOS so mine looks like this:
 
-![Huion Kamvas tablet driver software showing the pen pressure curve settings used to calibrate raw pressure input on macOS](huion-kamvas-tablet-driver-pressure-curve.png#center)
+{{< figure src="huion-kamvas-tablet-driver-pressure-curve.png" alt="Huion Kamvas tablet driver software showing the pen pressure curve settings used to calibrate raw pressure input on macOS" caption="I typically keep my pressure curve pretty linear at this layer." align="center" >}}
 
 The global setting is under __CLIP STUDIO PAINT → Pen Pressure Settings__ on macOS, or __File → Pen Pressure
 Settings__ on Windows. It's a Studio Mode menu item, not something tied to your current tool.
@@ -89,12 +89,14 @@ same brush and the same stroke through a few configurations and compared the res
 __Baseline.__ Same brush, same stroke, everything at default. This is the control every other capture below gets
 compared against.
 
-<!-- screenshot/video: same brush, same stroke, default global calibration + default brush dynamics, as the baseline -->
+{{< figure src="clip-studio-paint-default-pen-pressure-stroke-baseline.png" alt="Three pen strokes in Clip Studio Paint drawn with default global pen pressure calibration and default brush dynamics, tapering naturally from light to heavy pressure" caption="Default global calibration, default brush dynamics — the control every other stroke below is compared against." align="center" >}}
 
-__Global calibration shifted toward Lighter.__ Same brush, same stroke, brush dynamics untouched. Nothing about
+__Global calibration shifted toward Stronger.__ Same brush, same stroke, brush dynamics untouched. Nothing about
 the brush changed, only the global calibration, and the stroke still looks different.
 
-<!-- screenshot/video: same stroke, global Pen Pressure Settings pushed toward Lighter, brush dynamics untouched -->
+{{< figure src="clip-studio-paint-global-pen-pressure-settings-stronger-curve.png" alt="Clip Studio Paint global Pen Pressure Settings dialog with the calibration curve pushed toward Stronger, boosting output above the default diagonal" caption="Global Pen Pressure Settings pushed toward Stronger, well above the default diagonal." align="center" >}}
+
+{{< figure src="clip-studio-paint-global-pen-pressure-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after shifting the global pen pressure calibration toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only the global calibration changed between strokes." align="center" >}}
 
 __Per-brush pressure curve altered instead.__ Global calibration back to default, but this brush's own Dynamics
 curve is changed. A similar-looking shift to the one above, caused by the opposite layer, which is exactly the
@@ -113,7 +115,11 @@ __Pressure driving Size vs. pressure driving Opacity.__ Same brush, same hand pr
 pressure to a different property in each. "Pressure sensitive" isn't one behavior, it depends what pressure is
 wired to.
 
-<!-- screenshot/video: same brush, pressure linked to Brush Size vs. pressure linked to Opacity, side by side -->
+{{< figure src="clip-studio-paint-brush-dynamics-opacity-pressure-settings.png" alt="Clip Studio Paint brush Dynamics panel with Pen pressure linked to Opacity and the pressure curve left at its default straight line" caption="Dynamics panel with Pen pressure linked to Opacity, curve left at default." align="center" >}}
+
+{{< figure src="clip-studio-paint-pressure-linked-opacity-stroke-example.png" alt="Three pen strokes in Clip Studio Paint with pressure linked to Opacity, fading from light to dark along each stroke while the line width stays constant" caption="Pressure linked to Opacity: width stays constant, only the strokes' darkness shifts with pressure." align="center" >}}
+
+<!-- still need: the Brush Size side of this comparison — same brush/stroke, Dynamics with pressure linked to Size instead, for a true side-by-side against the Opacity shots above -->
 
 {{< kofi-cta >}}
 If this saved you from chasing the wrong setting, buying me a coffee helps keep posts like this coming.
