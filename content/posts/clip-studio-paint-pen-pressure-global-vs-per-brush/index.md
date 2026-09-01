@@ -1,13 +1,11 @@
 ---
 date: '2026-08-22T06:00:00-04:00'
-draft: true
+draft: false
 title: 'Clip Studio Paint Pen Pressure Settings Explained: Global vs. Per-Brush'
 description: 'Clip Studio Paint has more than one pen pressure setting, and they don''t do the same thing. Here''s the full chain from your tablet to the stroke on canvas, and which setting actually fixes your problem.'
 url: '/clip-studio-paint-pen-pressure/'
 categories: ["Clip Studio Paint", "Art"]
 ---
-
-<!-- cover image once captured: the side-by-side stroke comparison from the experiment section below -->
 
 "Pen pressure" in Clip Studio Paint isn't one setting. It's at least three, stacked on top of each other, and
 none of them show up in the same menu. That's the actual reason so many pressure problems in CSP take forever to
