@@ -120,7 +120,8 @@ under the hood.
 
 __Pressure driving Size vs. pressure driving Opacity.__ Same brush, same hand pressure, but Dynamics links
 pressure to a different property in each. "Pressure sensitive" isn't one behavior, it depends what pressure is
-wired to.
+wired to. The Size side is just the baseline stroke from earlier, default Dynamics already link pressure to
+Brush Size.
 
 {{< figure src="clip-studio-paint-brush-dynamics-opacity-pressure-settings.png" alt="Clip Studio Paint brush Dynamics panel with Pen pressure linked to Opacity and the pressure curve left at its default straight line" caption="Dynamics panel with Pen pressure linked to Opacity, curve left at default." align="center" >}}
 
