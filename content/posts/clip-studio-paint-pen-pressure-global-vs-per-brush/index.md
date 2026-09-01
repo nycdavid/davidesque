@@ -105,8 +105,9 @@ __Per-brush pressure curve altered instead.__ Global calibration back to default
 curve is changed. A similar-looking shift to the one above, caused by the opposite layer, which is exactly the
 mix-up that sends people down the wrong troubleshooting path.
 
-<!-- screenshot/video: same stroke, global calibration back to default, brush's own per-tool pressure curve
-     altered instead -->
+{{< figure src="clip-studio-paint-per-brush-dynamics-pressure-curve-stronger-settings.png" alt="Clip Studio Paint Brush Size Dynamics panel with that brush's own pressure curve pushed toward Stronger, global calibration untouched" caption="This brush's own Dynamics curve pushed toward Stronger, not the global calibration." align="center" >}}
+
+{{< figure src="clip-studio-paint-per-brush-pressure-curve-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after pushing a brush's own Dynamics pressure curve toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only this brush's own pressure curve changed." align="center" >}}
 
 __Minimum Value raised.__ Both global and per-brush curve back to default, only this brush's Minimum Value is
 raised. See [the Minimum Value post](/clip-studio-paint-minimum-value/) for what this specific setting is doing
