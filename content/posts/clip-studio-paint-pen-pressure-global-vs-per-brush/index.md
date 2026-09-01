@@ -96,7 +96,10 @@ the brush changed, only the global calibration, and the stroke still looks diffe
 
 {{< figure src="clip-studio-paint-global-pen-pressure-settings-stronger-curve.png" alt="Clip Studio Paint global Pen Pressure Settings dialog with the calibration curve pushed toward Stronger, boosting output above the default diagonal" caption="Global Pen Pressure Settings pushed toward Stronger, well above the default diagonal." align="center" >}}
 
-{{< figure src="clip-studio-paint-global-pen-pressure-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after shifting the global pen pressure calibration toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only the global calibration changed between strokes." align="center" >}}
+{{< figure src="clip-studio-paint-global-pen-pressure-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after shifting the global pen pressure calibration toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only the global calibration changed." align="center" >}}
+
+In this case, the line is thicker despite the same pressure given because the global calibration is biased toward stronger.
+This means that it takes less pressure to get to a given "output" level.
 
 __Per-brush pressure curve altered instead.__ Global calibration back to default, but this brush's own Dynamics
 curve is changed. A similar-looking shift to the one above, caused by the opposite layer, which is exactly the
@@ -109,7 +112,11 @@ __Minimum Value raised.__ Both global and per-brush curve back to default, only 
 raised. See [the Minimum Value post](/clip-studio-paint-minimum-value/) for what this specific setting is doing
 under the hood.
 
-<!-- screenshot/video: same stroke, Minimum Value raised on that brush, everything else back to default -->
+{{< figure src="clip-studio-paint-minimum-value-raised-stroke-comparison.png" alt="Two Clip Studio Paint pen strokes compared at Minimum Value 0 versus Minimum Value 50, same brush size, showing the stroke never thins below the raised floor" caption="Min Value 0 versus Min Value 50 at the same brush size — raising the floor keeps the stroke from ever thinning out, even at the lightest touch." align="center" >}}
+
+Same brush size both times, same light-to-heavy pressure. At Min Value 0 the stroke tapers all the way down to
+nearly nothing at a light touch. At Min Value 50 it can't drop below half width no matter how lightly you press,
+because the floor itself moved.
 
 __Pressure driving Size vs. pressure driving Opacity.__ Same brush, same hand pressure, but Dynamics links
 pressure to a different property in each. "Pressure sensitive" isn't one behavior, it depends what pressure is
