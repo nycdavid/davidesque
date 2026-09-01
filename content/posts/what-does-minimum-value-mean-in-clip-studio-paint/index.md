@@ -119,3 +119,7 @@ Once I understood it as a floor instead of a threshold, a few things I'd been fi
 
 It's a small setting, but it can introduce a lot of subtlety and nuance to your linework. It's definitely worth 
 experimenting with on your own brushes to find settings that you're happy with.
+
+Minimum Value is just one piece of a bigger system, though. If you want the full chain from your tablet's driver
+up through CSP's global calibration and per-brush Dynamics, I mapped the whole thing out in
+[Pen Pressure Settings Explained: Global vs. Per-Brush](/clip-studio-paint-pen-pressure/).
