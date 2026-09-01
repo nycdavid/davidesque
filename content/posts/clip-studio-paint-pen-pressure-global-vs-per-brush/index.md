@@ -1,13 +1,11 @@
 ---
 date: '2026-08-22T06:00:00-04:00'
-draft: true
+draft: false
 title: 'Clip Studio Paint Pen Pressure Settings Explained: Global vs. Per-Brush'
 description: 'Clip Studio Paint has more than one pen pressure setting, and they don''t do the same thing. Here''s the full chain from your tablet to the stroke on canvas, and which setting actually fixes your problem.'
 url: '/clip-studio-paint-pen-pressure/'
 categories: ["Clip Studio Paint", "Art"]
 ---
-
-<!-- cover image once captured: the side-by-side stroke comparison from the experiment section below -->
 
 "Pen pressure" in Clip Studio Paint isn't one setting. It's at least three, stacked on top of each other, and
 none of them show up in the same menu. That's the actual reason so many pressure problems in CSP take forever to
@@ -19,7 +17,7 @@ does on a single brush. Fixing Minimum Value changed _that_ brush. It didn't tou
 because Minimum Value isn't a pressure setting on its own, it's one knob inside a much bigger system. This post
 is that system, laid out end to end.
 
-__In short:__ your pressure ends up on canvas after passing through three separate layers: your tablet's own
+__In short:__ your mark ends up on canvas after passing through three separate pressure layers: your tablet's own
 driver, Clip Studio Paint's global __Pen Pressure Settings__ (which calibrates that raw signal into CSP's
 internal 0-100 value), and then that specific brush's own __Dynamics__ settings in its Sub Tool Detail panel
 (which decide what the brush actually does with that value). Diagnosing a pressure problem means figuring out
@@ -44,6 +42,11 @@ problem is in layer 2, or vice versa. The two settings share a name and _look_ l
 thing but they aren't.
 
 ## Where each one lives
+
+The tablet driver setting will be different across vendors but will most likely live in the driver software. I'm
+currently using the Huion Kamvas 16 Gen 3 on MacOS so mine looks like this:
+
+{{< figure src="huion-kamvas-tablet-driver-pressure-curve.png" alt="Huion Kamvas tablet driver software showing the pen pressure curve settings used to calibrate raw pressure input on macOS" caption="I typically keep my pressure curve pretty linear at this layer." align="center" >}}
 
 The global setting is under __CLIP STUDIO PAINT → Pen Pressure Settings__ on macOS, or __File → Pen Pressure
 Settings__ on Windows. It's a Studio Mode menu item, not something tied to your current tool.
@@ -84,31 +87,44 @@ same brush and the same stroke through a few configurations and compared the res
 __Baseline.__ Same brush, same stroke, everything at default. This is the control every other capture below gets
 compared against.
 
-<!-- screenshot/video: same brush, same stroke, default global calibration + default brush dynamics, as the baseline -->
+{{< figure src="clip-studio-paint-default-pen-pressure-stroke-baseline.png" alt="Three pen strokes in Clip Studio Paint drawn with default global pen pressure calibration and default brush dynamics, tapering naturally from light to heavy pressure" caption="Default global calibration, default brush dynamics — the control every other stroke below is compared against." align="center" >}}
 
-__Global calibration shifted toward Lighter.__ Same brush, same stroke, brush dynamics untouched. Nothing about
+__Global calibration shifted toward Stronger.__ Same brush, same stroke, brush dynamics untouched. Nothing about
 the brush changed, only the global calibration, and the stroke still looks different.
 
-<!-- screenshot/video: same stroke, global Pen Pressure Settings pushed toward Lighter, brush dynamics untouched -->
+{{< figure src="clip-studio-paint-global-pen-pressure-settings-stronger-curve.png" alt="Clip Studio Paint global Pen Pressure Settings dialog with the calibration curve pushed toward Stronger, boosting output above the default diagonal" caption="Global Pen Pressure Settings pushed toward Stronger, well above the default diagonal." align="center" >}}
+
+{{< figure src="clip-studio-paint-global-pen-pressure-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after shifting the global pen pressure calibration toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only the global calibration changed." align="center" >}}
+
+In this case, the line is thicker despite the same pressure given because the global calibration is biased toward stronger.
+This means that it takes less pressure to get to a given "output" level.
 
 __Per-brush pressure curve altered instead.__ Global calibration back to default, but this brush's own Dynamics
 curve is changed. A similar-looking shift to the one above, caused by the opposite layer, which is exactly the
 mix-up that sends people down the wrong troubleshooting path.
 
-<!-- screenshot/video: same stroke, global calibration back to default, brush's own per-tool pressure curve
-     altered instead -->
+{{< figure src="clip-studio-paint-per-brush-dynamics-pressure-curve-stronger-settings.png" alt="Clip Studio Paint Brush Size Dynamics panel with that brush's own pressure curve pushed toward Stronger, global calibration untouched" caption="This brush's own Dynamics curve pushed toward Stronger, not the global calibration." align="center" >}}
+
+{{< figure src="clip-studio-paint-per-brush-pressure-curve-stronger-stroke-comparison.png" alt="Three Clip Studio Paint pen strokes compared after pushing a brush's own Dynamics pressure curve toward Stronger, showing a bolder line at the same hand pressure" caption="Same brush, same hand pressure, only this brush's own pressure curve changed." align="center" >}}
 
 __Minimum Value raised.__ Both global and per-brush curve back to default, only this brush's Minimum Value is
 raised. See [the Minimum Value post](/clip-studio-paint-minimum-value/) for what this specific setting is doing
 under the hood.
 
-<!-- screenshot/video: same stroke, Minimum Value raised on that brush, everything else back to default -->
+{{< figure 
+    src="clip-studio-paint-minimum-value-raised-stroke-comparison.png" 
+    alt="Two Clip Studio Paint pen strokes compared at Minimum Value 0 versus Minimum Value 50, same brush size, showing the stroke never thins below the raised floor" 
+    caption="Min Value modulating brush size at 0 vs. 50 — raising the floor keeps the stroke from ever thinning out, even at the lightest touch." 
+    align="center" >}}
 
 __Pressure driving Size vs. pressure driving Opacity.__ Same brush, same hand pressure, but Dynamics links
 pressure to a different property in each. "Pressure sensitive" isn't one behavior, it depends what pressure is
-wired to.
+wired to. The Size side is just the baseline stroke from earlier, default Dynamics already link pressure to
+Brush Size.
 
-<!-- screenshot/video: same brush, pressure linked to Brush Size vs. pressure linked to Opacity, side by side -->
+{{< figure src="clip-studio-paint-brush-dynamics-opacity-pressure-settings.png" alt="Clip Studio Paint brush Dynamics panel with Pen pressure linked to Opacity and the pressure curve left at its default straight line" caption="Dynamics panel with Pen pressure linked to Opacity, curve left at default." align="center" >}}
+
+{{< figure src="clip-studio-paint-pressure-linked-opacity-stroke-example.png" alt="Three pen strokes in Clip Studio Paint with pressure linked to Opacity, fading from light to dark along each stroke while the line width stays constant" caption="Pressure linked to Opacity: width stays constant, only the strokes' darkness shifts with pressure." align="center" >}}
 
 {{< kofi-cta >}}
 If this saved you from chasing the wrong setting, buying me a coffee helps keep posts like this coming.
