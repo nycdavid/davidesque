@@ -112,11 +112,11 @@ __Minimum Value raised.__ Both global and per-brush curve back to default, only 
 raised. See [the Minimum Value post](/clip-studio-paint-minimum-value/) for what this specific setting is doing
 under the hood.
 
-{{< figure src="clip-studio-paint-minimum-value-raised-stroke-comparison.png" alt="Two Clip Studio Paint pen strokes compared at Minimum Value 0 versus Minimum Value 50, same brush size, showing the stroke never thins below the raised floor" caption="Min Value 0 versus Min Value 50 at the same brush size — raising the floor keeps the stroke from ever thinning out, even at the lightest touch." align="center" >}}
-
-Same brush size both times, same light-to-heavy pressure. At Min Value 0 the stroke tapers all the way down to
-nearly nothing at a light touch. At Min Value 50 it can't drop below half width no matter how lightly you press,
-because the floor itself moved.
+{{< figure 
+    src="clip-studio-paint-minimum-value-raised-stroke-comparison.png" 
+    alt="Two Clip Studio Paint pen strokes compared at Minimum Value 0 versus Minimum Value 50, same brush size, showing the stroke never thins below the raised floor" 
+    caption="Min Value modulating brush size at 0 vs. 50 — raising the floor keeps the stroke from ever thinning out, even at the lightest touch." 
+    align="center" >}}
 
 __Pressure driving Size vs. pressure driving Opacity.__ Same brush, same hand pressure, but Dynamics links
 pressure to a different property in each. "Pressure sensitive" isn't one behavior, it depends what pressure is
