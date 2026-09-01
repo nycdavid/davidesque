@@ -9,3 +9,11 @@
     color: var(--secondary);
     margin: 6px 0 20px;
 }
+
+/* ─── Figure captions ────────────────────────────────────────── */
+/* PaperMod centers figcaption text inside align="center" figures; left-align
+   it instead so multi-line captions read like normal body text. */
+
+.post-content figure.align-center figcaption {
+    text-align: left;
+}
