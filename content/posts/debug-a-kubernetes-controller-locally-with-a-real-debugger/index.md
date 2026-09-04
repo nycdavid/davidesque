@@ -1,7 +1,7 @@
 ---
 date: '2025-12-02T16:34:48-05:00'
 draft: true
-title: 'Debugging Local K8s Controller With Remote Cluster Resources'
+title: 'How to Debug a Kubernetes Controller Locally With a Real Debugger, Against a Real Cluster'
 ---
 
 # Pre-requisites
